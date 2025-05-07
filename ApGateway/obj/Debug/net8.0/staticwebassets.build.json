@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "YStFbYa4b21FfBh8lJqznXshfYB7Rx1bjcP1I5lE3LQ=",
+  "Source": "ApGateway",
+  "BasePath": "_content/ApGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

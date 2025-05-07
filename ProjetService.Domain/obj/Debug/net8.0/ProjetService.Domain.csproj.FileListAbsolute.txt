@@ -1,0 +1,28 @@
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\bin\Debug\net8.0\ProjetService.Domain.deps.json
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\bin\Debug\net8.0\ProjetService.Domain.runtimeconfig.json
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\bin\Debug\net8.0\ProjetService.Domain.dll
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\bin\Debug\net8.0\ProjetService.Domain.pdb
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.AssemblyInfo.cs
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.dll
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\refint\ProjetService.Domain.dll
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.pdb
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.genruntimeconfig.cache
+C:\Users\hp\source\repos\PFEPoulina\ProjetService.Domain\obj\Debug\net8.0\ref\ProjetService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\bin\Debug\net8.0\ProjetService.Domain.deps.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\bin\Debug\net8.0\ProjetService.Domain.runtimeconfig.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\bin\Debug\net8.0\ProjetService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\bin\Debug\net8.0\ProjetService.Domain.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.AssemblyInfo.cs
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\refint\ProjetService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.genruntimeconfig.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ref\ProjetService.Domain.dll

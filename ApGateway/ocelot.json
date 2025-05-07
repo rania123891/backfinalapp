@@ -1,0 +1,61 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/{everything}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7207
+                }
+            ],
+            "UpstreamPathTemplate": "/projet/api/{everything}",
+            "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Utilisateur/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5182
+                }
+            ],
+            "UpstreamPathTemplate": "/user/api/Utilisateur/{everything}",
+            "UpstreamHttpMethod": [ "GET", "POST", "DELETE" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Utilisateur/login",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5182
+                }
+            ],
+            "UpstreamPathTemplate": "/user/api/Utilisateur/login",
+            "UpstreamHttpMethod": [ "POST" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Utilisateur/register",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5182
+                }
+            ],
+            "UpstreamPathTemplate": "/user/api/Utilisateur/register",
+            "UpstreamHttpMethod": [ "POST" ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:5093",
+        "CorsPolicy": {
+            "AllowedOrigins": ["http://localhost:4200"],
+            "AllowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+            "AllowedHeaders": ["*"],
+            "AllowCredentials": true
+        }
+    }
+}

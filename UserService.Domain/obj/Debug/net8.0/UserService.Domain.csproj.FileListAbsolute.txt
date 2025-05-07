@@ -1,0 +1,28 @@
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\bin\Debug\net8.0\UserService.Domain.deps.json
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\bin\Debug\net8.0\UserService.Domain.runtimeconfig.json
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\bin\Debug\net8.0\UserService.Domain.dll
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\bin\Debug\net8.0\UserService.Domain.pdb
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\UserService.Domain.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\UserService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\UserService.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\UserService.Domain.AssemblyInfo.cs
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\UserService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\UserService.Domain.dll
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\refint\UserService.Domain.dll
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\UserService.Domain.pdb
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\UserService.Domain.genruntimeconfig.cache
+C:\Users\hp\source\repos\PFEPoulina\UserService.Domain\obj\Debug\net8.0\ref\UserService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\bin\Debug\net8.0\UserService.Domain.deps.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\bin\Debug\net8.0\UserService.Domain.runtimeconfig.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\bin\Debug\net8.0\UserService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\bin\Debug\net8.0\UserService.Domain.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\UserService.Domain.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\UserService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\UserService.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\UserService.Domain.AssemblyInfo.cs
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\UserService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\UserService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\refint\UserService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\UserService.Domain.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\UserService.Domain.genruntimeconfig.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Domain\obj\Debug\net8.0\ref\UserService.Domain.dll

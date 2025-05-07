@@ -1,0 +1,34 @@
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\bin\Debug\net8.0\UserService.Infra.deps.json
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\bin\Debug\net8.0\UserService.Infra.dll
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\bin\Debug\net8.0\UserService.Infra.pdb
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\bin\Debug\net8.0\UserService.Data.dll
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\bin\Debug\net8.0\UserService.Domain.dll
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\bin\Debug\net8.0\UserService.Data.pdb
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\bin\Debug\net8.0\UserService.Domain.pdb
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\UserService.Infra.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\UserService.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\UserService.Infra.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\UserService.Infra.AssemblyInfo.cs
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\UserService.Infra.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\UserServ.47CD2C49.Up2Date
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\UserService.Infra.dll
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\refint\UserService.Infra.dll
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\UserService.Infra.pdb
+C:\Users\hp\source\repos\PFEPoulina\UserService.Infra\obj\Debug\net8.0\ref\UserService.Infra.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\bin\Debug\net8.0\UserService.Infra.deps.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\bin\Debug\net8.0\UserService.Infra.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\bin\Debug\net8.0\UserService.Infra.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\bin\Debug\net8.0\UserService.Data.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\bin\Debug\net8.0\UserService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\bin\Debug\net8.0\UserService.Data.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\bin\Debug\net8.0\UserService.Domain.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.AssemblyInfo.cs
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserServ.47CD2C49.Up2Date
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\refint\UserService.Infra.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\ref\UserService.Infra.dll

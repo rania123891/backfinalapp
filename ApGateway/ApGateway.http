@@ -1,0 +1,6 @@
+@ApGateway_HostAddress = http://localhost:5093
+
+GET {{ApGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

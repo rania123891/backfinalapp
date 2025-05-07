@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "Nouveau profil",
+    "Projects": [
+      {
+        "Path": "UserService.Api\\UserService.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ProjetService.Api\\ProjetService.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ApGateway\\ApGateway.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
+    "Method": "GetAllUtilisateurs",
+    "RelativePath": "api/Utilisateur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
+    "Method": "DeleteUtilisateur",
+    "RelativePath": "api/Utilisateur/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
+    "Method": "GetUtilisateur",
+    "RelativePath": "api/Utilisateur/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
+    "Method": "Login",
+    "RelativePath": "api/Utilisateur/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "UserService.Domain.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
+    "Method": "Register",
+    "RelativePath": "api/Utilisateur/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ConfirmPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Prenom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
