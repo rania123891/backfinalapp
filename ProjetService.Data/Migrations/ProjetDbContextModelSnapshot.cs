@@ -78,34 +78,6 @@ namespace ProjetService.Data.Migrations
                     b.ToTable("Equipes");
                 });
 
-            modelBuilder.Entity("ProjetService.Domain.Models.Liste", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DateCreation")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Nom")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Position")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TableauId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TableauId");
-
-                    b.ToTable("Listes");
-                });
-
             modelBuilder.Entity("ProjetService.Domain.Models.MembreEquipe", b =>
                 {
                     b.Property<int>("Id")
@@ -131,6 +103,59 @@ namespace ProjetService.Data.Migrations
                     b.HasIndex("EquipeId");
 
                     b.ToTable("MembresEquipe");
+                });
+
+            modelBuilder.Entity("ProjetService.Domain.Models.Planification", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<TimeSpan>("HeureDebut")
+                        .HasColumnType("time")
+                        .HasColumnName("heure_debut");
+
+                    b.Property<TimeSpan>("HeureFin")
+                        .HasColumnType("time")
+                        .HasColumnName("heure_fin");
+
+                    b.Property<int>("ListeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0)
+                        .HasColumnName("liste_id");
+
+                    b.Property<int>("ProjetId")
+                        .HasColumnType("int")
+                        .HasColumnName("projet_id");
+
+                    b.Property<int>("TacheId")
+                        .HasColumnType("int")
+                        .HasColumnName("tache_id");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Date")
+                        .HasDatabaseName("IX_Planifications_Date");
+
+                    b.HasIndex("ProjetId");
+
+                    b.HasIndex("TacheId");
+
+                    b.HasIndex("Date", "HeureDebut")
+                        .HasDatabaseName("IX_Planifications_Date_HeureDebut");
+
+                    b.ToTable("Planifications");
                 });
 
             modelBuilder.Entity("ProjetService.Domain.Models.Projet", b =>
@@ -169,35 +194,6 @@ namespace ProjetService.Data.Migrations
                     b.ToTable("Projets");
                 });
 
-            modelBuilder.Entity("ProjetService.Domain.Models.Tableau", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nom")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Position")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProjetId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProjetId");
-
-                    b.ToTable("Tableaux");
-                });
-
             modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>
                 {
                     b.Property<int>("Id")
@@ -206,29 +202,10 @@ namespace ProjetService.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AssigneId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DateCreation")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateEcheance")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ListeId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Priorite")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProjetId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Statut")
+                    b.Property<int?>("ProjetId")
                         .HasColumnType("int");
 
                     b.Property<string>("Titre")
@@ -236,8 +213,6 @@ namespace ProjetService.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ListeId");
 
                     b.HasIndex("ProjetId");
 
@@ -266,17 +241,6 @@ namespace ProjetService.Data.Migrations
                     b.Navigation("Projet");
                 });
 
-            modelBuilder.Entity("ProjetService.Domain.Models.Liste", b =>
-                {
-                    b.HasOne("ProjetService.Domain.Models.Tableau", "Tableau")
-                        .WithMany("Listes")
-                        .HasForeignKey("TableauId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Tableau");
-                });
-
             modelBuilder.Entity("ProjetService.Domain.Models.MembreEquipe", b =>
                 {
                     b.HasOne("ProjetService.Domain.Models.Equipe", "Equipe")
@@ -288,34 +252,30 @@ namespace ProjetService.Data.Migrations
                     b.Navigation("Equipe");
                 });
 
-            modelBuilder.Entity("ProjetService.Domain.Models.Tableau", b =>
+            modelBuilder.Entity("ProjetService.Domain.Models.Planification", b =>
                 {
                     b.HasOne("ProjetService.Domain.Models.Projet", "Projet")
-                        .WithMany("Tableaux")
-                        .HasForeignKey("ProjetId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Projet");
-                });
-
-            modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>
-                {
-                    b.HasOne("ProjetService.Domain.Models.Liste", "Liste")
-                        .WithMany("Taches")
-                        .HasForeignKey("ListeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProjetService.Domain.Models.Projet", "Projet")
-                        .WithMany("Taches")
+                        .WithMany("Planifications")
                         .HasForeignKey("ProjetId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("Liste");
+                    b.HasOne("ProjetService.Domain.Models.Tache", "Tache")
+                        .WithMany("Planifications")
+                        .HasForeignKey("TacheId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Projet");
+
+                    b.Navigation("Tache");
+                });
+
+            modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>
+                {
+                    b.HasOne("ProjetService.Domain.Models.Projet", null)
+                        .WithMany("Taches")
+                        .HasForeignKey("ProjetId");
                 });
 
             modelBuilder.Entity("ProjetService.Domain.Models.Equipe", b =>
@@ -323,28 +283,20 @@ namespace ProjetService.Data.Migrations
                     b.Navigation("MembresEquipe");
                 });
 
-            modelBuilder.Entity("ProjetService.Domain.Models.Liste", b =>
-                {
-                    b.Navigation("Taches");
-                });
-
             modelBuilder.Entity("ProjetService.Domain.Models.Projet", b =>
                 {
                     b.Navigation("Equipes");
 
-                    b.Navigation("Tableaux");
+                    b.Navigation("Planifications");
 
                     b.Navigation("Taches");
-                });
-
-            modelBuilder.Entity("ProjetService.Domain.Models.Tableau", b =>
-                {
-                    b.Navigation("Listes");
                 });
 
             modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>
                 {
                     b.Navigation("Commentaires");
+
+                    b.Navigation("Planifications");
                 });
 #pragma warning restore 612, 618
         }

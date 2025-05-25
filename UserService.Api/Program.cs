@@ -8,6 +8,9 @@ using UserService.Data.Context;
 using UserService.Data.Repositories;
 using UserService.Domain.Interfaces;
 using UserService.Infra.Services;
+using UserService.Api.Filters;
+using UserService.Api.Controllers;
+using UserService.Domain.Interfaces.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,7 +45,8 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ValidateIssuer = false,
-        ValidateAudience = false
+        ValidateAudience = false,
+        NameClaimType = "nameid"
     };
 });
 
@@ -62,8 +66,17 @@ builder.Services.AddAuthorization(options =>
 // Ajouter les contrôleurs et configurer Swagger avec sécurité
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddScoped<IFileStorageService, LocalFileStorageService>();
 builder.Services.AddSwaggerGen(c =>
 {
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "UserService API",
+        Version = "v1",
+        Description = "API pour la gestion des utilisateurs"
+    });
+
+    c.SchemaFilter<FormFileSchemaFilter>();
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "Entrez 'Bearer' [espace] et le token JWT.\r\nExemple: \"Bearer 12345abcdef\"",
@@ -103,6 +116,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseRouting();
 app.UseCors("AllowAllOrigins");
+
+// 🔧 AJOUT : Configurer les fichiers statiques pour servir les images uploadées
+app.UseStaticFiles(); // Servira automatiquement les fichiers depuis le dossier wwwroot
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

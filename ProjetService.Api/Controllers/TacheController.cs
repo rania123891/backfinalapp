@@ -19,13 +19,6 @@ namespace ProjetService.Api.Controllers
             _context = context;
         }
 
-        [HttpGet("liste/{listeId}")]
-        public async Task<ActionResult> GetTachesByListe(int listeId)
-        {
-            return Ok(await _context.Taches
-                .Where(t => t.ListeId == listeId)
-                .ToListAsync());
-        }
         [HttpGet("gantt")]
         public async Task<ActionResult<List<TacheGanttDto>>> GetTachesPourGantt()
         {
@@ -35,8 +28,6 @@ namespace ProjetService.Api.Controllers
             {
                 Id = t.Id.ToString(),
                 Name = t.Titre,
-                Start = t.DateCreation,
-                End = t.DateEcheance,
                 Dependencies = "" // pour l'instant pas de dépendances
             }).ToList();
 

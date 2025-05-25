@@ -3,6 +3,7 @@ using ProjetService.Domain.Models;
 using ProjetService.Domain.Interfaces;
 using MediatR;
 using ProjetService.Domain.DTO;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProjetService.Api.Controllers
 {
@@ -23,6 +24,23 @@ namespace ProjetService.Api.Controllers
             _membreEquipeRepository = membreEquipeRepository;
         }
 
+        // GET: api/equipes/membres
+        [HttpGet("membres")]
+        public async Task<ActionResult<IEnumerable<MembreEquipe>>> GetAllMembres()
+        {
+            var membres = await _membreEquipeRepository.GetAllAsync();
+            return Ok(membres);
+        }
+
+        // GET: api/equipes/{equipeId}/membres
+        [HttpGet("{equipeId}/membres")]
+        public async Task<ActionResult<IEnumerable<MembreEquipe>>> GetMembresByEquipe(int equipeId)
+        {
+            var membres = await _membreEquipeRepository.GetAllAsync();
+            var membresDeLEquipe = membres.Where(m => m.EquipeId == equipeId).ToList();
+            return Ok(membresDeLEquipe);
+        }
+
         [HttpPost("{equipeId}/membres")]
         public async Task<IActionResult> AjouterMembres(int equipeId, [FromBody] AjouterMembreDto[] dto)
         {
@@ -31,8 +49,6 @@ namespace ProjetService.Api.Controllers
 
             foreach (var membre in dto)
             {
-                // Ici, ajoute chaque membre à l'équipe
-                // Par exemple :
                 var membreEquipe = new MembreEquipe
                 {
                     EquipeId = equipeId,
@@ -46,7 +62,6 @@ namespace ProjetService.Api.Controllers
             return Ok();
         }
 
-        // DELETE: api/equipes/{equipeId}/membres/{membreEquipeId}
         [HttpDelete("{equipeId}/membres/{membreEquipeId}")]
         public async Task<IActionResult> SupprimerMembre(int equipeId, int membreEquipeId)
         {
@@ -58,6 +73,4 @@ namespace ProjetService.Api.Controllers
             return Ok();
         }
     }
-
-
 }

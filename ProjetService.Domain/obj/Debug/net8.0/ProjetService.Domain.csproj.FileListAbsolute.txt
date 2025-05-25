@@ -21,6 +21,7 @@ C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.AssemblyInfoInputs.cache
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.AssemblyInfo.cs
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.sourcelink.json
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.dll
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\refint\ProjetService.Domain.dll
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ProjetService.Domain\obj\Debug\net8.0\ProjetService.Domain.pdb

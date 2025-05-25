@@ -47,5 +47,15 @@ namespace UserService.Data.Repositories
                 .AsNoTracking()
                 .ToListAsync();
         }
+        public async Task<Utilisateur> GetByIdAsync(int id)
+        {
+            return await _context.Utilisateurs.FindAsync(id);
+        }
+
+        public async Task UpdateAsync(Utilisateur utilisateur)
+        {
+            _context.Utilisateurs.Update(utilisateur);
+            await _context.SaveChangesAsync();
+        }
     }
 }

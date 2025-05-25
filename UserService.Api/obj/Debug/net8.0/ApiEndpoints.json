@@ -11,22 +11,6 @@
   },
   {
     "ContainingType": "UserService.Api.Controllers.UtilisateurController",
-    "Method": "DeleteUtilisateur",
-    "RelativePath": "api/Utilisateur/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
     "Method": "GetUtilisateur",
     "RelativePath": "api/Utilisateur/{id}",
     "HttpMethod": "GET",
@@ -36,6 +20,58 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserService.Domain.DTOs.UtilisateurDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
+    "Method": "GetByEmail",
+    "RelativePath": "api/Utilisateur/by-email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserService.Domain.DTOs.UtilisateurDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
+    "Method": "GetProfileImage",
+    "RelativePath": "api/Utilisateur/image/{fileName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -93,6 +129,27 @@
       {
         "Name": "Role",
         "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserService.Api.Controllers.UtilisateurController",
+    "Method": "UploadPhoto",
+    "RelativePath": "api/Utilisateur/upload-photo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],

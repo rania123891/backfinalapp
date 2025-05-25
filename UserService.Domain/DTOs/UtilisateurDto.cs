@@ -4,7 +4,9 @@
     {
         public int Id { get; set; }
         public string Email { get; set; }
+        public string Nom { get; set; }    // Ajouté
+        public string Prenom { get; set; }  // Ajouté
         public string Role { get; set; }
-        // Ajoutez d'autres propriétés si nécessaire
+        public string? ProfilePhotoUrl { get; set; }
     }
 }

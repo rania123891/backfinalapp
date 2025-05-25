@@ -47,14 +47,26 @@
             ],
             "UpstreamPathTemplate": "/user/api/Utilisateur/register",
             "UpstreamHttpMethod": [ "POST" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Messages/{everything}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7269
+                }
+            ],
+            "UpstreamPathTemplate": "/message/api/Messages/{everything}",
+            "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
         }
     ],
     "GlobalConfiguration": {
         "BaseUrl": "https://localhost:5093",
         "CorsPolicy": {
-            "AllowedOrigins": ["http://localhost:4200"],
-            "AllowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-            "AllowedHeaders": ["*"],
+            "AllowedOrigins": [ "http://localhost:4200" ],
+            "AllowedMethods": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+            "AllowedHeaders": [ "*" ],
             "AllowCredentials": true
         }
     }

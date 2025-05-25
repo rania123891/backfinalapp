@@ -27,6 +27,7 @@ C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\Us
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.AssemblyInfoInputs.cache
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.AssemblyInfo.cs
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.sourcelink.json
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserServ.47CD2C49.Up2Date
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\UserService.Infra.dll
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Infra\obj\Debug\net8.0\refint\UserService.Infra.dll

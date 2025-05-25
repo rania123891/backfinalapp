@@ -221,7 +221,92 @@
         }
       }
     },
+    "/api/equipes/membres": {
+      "get": {
+        "tags": [
+          "Equipe"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MembreEquipe"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MembreEquipe"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MembreEquipe"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/equipes/{equipeId}/membres": {
+      "get": {
+        "tags": [
+          "Equipe"
+        ],
+        "parameters": [
+          {
+            "name": "equipeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MembreEquipe"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MembreEquipe"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MembreEquipe"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "post": {
         "tags": [
           "Equipe"
@@ -489,85 +574,26 @@
         }
       }
     },
-    "/api/listes/tableau/{tableauId}": {
-      "get": {
-        "tags": [
-          "Liste"
-        ],
-        "parameters": [
-          {
-            "name": "tableauId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/listes": {
-      "get": {
-        "tags": [
-          "Liste"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Liste"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Liste"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Liste"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
+    "/api/eta/predict": {
       "post": {
         "tags": [
-          "Liste"
+          "ETA"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Liste"
+                "$ref": "#/components/schemas/PredictionRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Liste"
+                "$ref": "#/components/schemas/PredictionRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Liste"
+                "$ref": "#/components/schemas/PredictionRequest"
               }
             }
           }
@@ -578,17 +604,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Liste"
+                  "$ref": "#/components/schemas/ETAResult"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Liste"
+                  "$ref": "#/components/schemas/ETAResult"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Liste"
+                  "$ref": "#/components/schemas/ETAResult"
                 }
               }
             }
@@ -596,103 +622,140 @@
         }
       }
     },
-    "/api/listes/{id}": {
-      "get": {
+    "/api/eta/predict-new": {
+      "post": {
         "tags": [
-          "Liste"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Liste"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Liste"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Liste"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Liste"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
+          "ETA"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Liste"
+                "$ref": "#/components/schemas/NouvelleTacheRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Liste"
+                "$ref": "#/components/schemas/NouvelleTacheRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Liste"
+                "$ref": "#/components/schemas/NouvelleTacheRequest"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Liste"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ETAResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ETAResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ETAResult"
+                }
+              }
             }
           }
+        }
+      }
+    },
+    "/api/eta/train": {
+      "post": {
+        "tags": [
+          "ETA"
         ],
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/eta/stats": {
+      "get": {
+        "tags": [
+          "ETA"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/eta/predict-batch": {
+      "post": {
+        "tags": [
+          "ETA"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PredictionRequest"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PredictionRequest"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PredictionRequest"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ETAResultWithId"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ETAResultWithId"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ETAResultWithId"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -882,6 +945,259 @@
         }
       }
     },
+    "/api/planifications": {
+      "get": {
+        "tags": [
+          "Planification"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Planification"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Planification"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Planification"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Planification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePlanificationDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePlanificationDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePlanificationDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/planifications/{id}": {
+      "get": {
+        "tags": [
+          "Planification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Planification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/planifications/date/{date}": {
+      "get": {
+        "tags": [
+          "Planification"
+        ],
+        "parameters": [
+          {
+            "name": "date",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Planification"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Planification"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Planification"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/planifications/{id}/statut": {
+      "patch": {
+        "tags": [
+          "Planification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePlanificationStatusDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePlanificationStatusDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePlanificationStatusDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Planification"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/projets": {
       "get": {
         "tags": [
@@ -1052,260 +1368,6 @@
         "parameters": [
           {
             "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/tableaux/projet/{projetId}": {
-      "get": {
-        "tags": [
-          "Tableau"
-        ],
-        "parameters": [
-          {
-            "name": "projetId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/tableaux/{tableauId}/listes": {
-      "get": {
-        "tags": [
-          "Tableau"
-        ],
-        "parameters": [
-          {
-            "name": "tableauId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/tableaux": {
-      "get": {
-        "tags": [
-          "Tableau"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Tableau"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Tableau"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Tableau"
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Tableau"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Tableau"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Tableau"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Tableau"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Tableau"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Tableau"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Tableau"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/tableaux/{id}": {
-      "get": {
-        "tags": [
-          "Tableau"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Tableau"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Tableau"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Tableau"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Tableau"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Tableau"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Tableau"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Tableau"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Tableau"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/taches/liste/{listeId}": {
-      "get": {
-        "tags": [
-          "Tache"
-        ],
-        "parameters": [
-          {
-            "name": "listeId",
             "in": "path",
             "required": true,
             "schema": {
@@ -1599,6 +1661,39 @@
         },
         "additionalProperties": false
       },
+      "CreatePlanificationDto": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "heureDebut": {
+            "type": "string",
+            "nullable": true
+          },
+          "heureFin": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "tacheId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projetId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "listeId": {
+            "$ref": "#/components/schemas/EtatListe"
+          }
+        },
+        "additionalProperties": false
+      },
       "Domaine": {
         "enum": [
           0,
@@ -1607,6 +1702,56 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "ETAResult": {
+        "type": "object",
+        "properties": {
+          "dureeEstimeeHeures": {
+            "type": "number",
+            "format": "float"
+          },
+          "dureeFormatee": {
+            "type": "string",
+            "nullable": true
+          },
+          "confiance": {
+            "type": "string",
+            "nullable": true
+          },
+          "typeTache": {
+            "type": "string",
+            "nullable": true
+          },
+          "facteursInfluents": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "dateEstimeeCompletion": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ETAResultWithId": {
+        "type": "object",
+        "properties": {
+          "tacheId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projetId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "prediction": {
+            "$ref": "#/components/schemas/ETAResult"
+          }
+        },
+        "additionalProperties": false
       },
       "Equipe": {
         "required": [
@@ -1645,44 +1790,15 @@
         },
         "additionalProperties": false
       },
-      "Liste": {
-        "required": [
-          "nom"
+      "EtatListe": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
         ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nom": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "position": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "dateCreation": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "tableauId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "tableau": {
-            "$ref": "#/components/schemas/Tableau"
-          },
-          "taches": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Tache"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
+        "type": "integer",
+        "format": "int32"
       },
       "MembreEquipe": {
         "type": "object",
@@ -1708,6 +1824,90 @@
           "dateAjout": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NouvelleTacheRequest": {
+        "type": "object",
+        "properties": {
+          "titre": {
+            "type": "string",
+            "nullable": true
+          },
+          "priorite": {
+            "$ref": "#/components/schemas/PrioriteTache"
+          },
+          "projetId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Planification": {
+        "required": [
+          "date",
+          "heureDebut",
+          "heureFin",
+          "listeId",
+          "projetId",
+          "tacheId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "heureDebut": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "heureFin": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "description": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "tacheId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projetId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "listeId": {
+            "$ref": "#/components/schemas/EtatListe"
+          },
+          "tache": {
+            "$ref": "#/components/schemas/Tache"
+          },
+          "projet": {
+            "$ref": "#/components/schemas/Projet"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PredictionRequest": {
+        "type": "object",
+        "properties": {
+          "tacheId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projetId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -1766,17 +1966,17 @@
             },
             "nullable": true
           },
-          "tableaux": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Tableau"
-            },
-            "nullable": true
-          },
           "taches": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Tache"
+            },
+            "nullable": true
+          },
+          "planifications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Planification"
             },
             "nullable": true
           }
@@ -1808,58 +2008,9 @@
         "type": "integer",
         "format": "int32"
       },
-      "StatutTache": {
-        "enum": [
-          0,
-          1,
-          2
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "Tableau": {
-        "required": [
-          "nom"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nom": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "position": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "projetId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "projet": {
-            "$ref": "#/components/schemas/Projet"
-          },
-          "listes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Liste"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "Tache": {
         "required": [
           "priorite",
-          "statut",
           "titre"
         ],
         "type": "object",
@@ -1872,46 +2023,20 @@
             "minLength": 1,
             "type": "string"
           },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "statut": {
-            "$ref": "#/components/schemas/StatutTache"
-          },
           "priorite": {
             "$ref": "#/components/schemas/PrioriteTache"
-          },
-          "dateCreation": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "dateEcheance": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "projetId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "projet": {
-            "$ref": "#/components/schemas/Projet"
-          },
-          "listeId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "liste": {
-            "$ref": "#/components/schemas/Liste"
-          },
-          "assigneId": {
-            "type": "integer",
-            "format": "int32"
           },
           "commentaires": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Commentaire"
+            },
+            "nullable": true
+          },
+          "planifications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Planification"
             },
             "nullable": true
           }
@@ -1940,6 +2065,15 @@
           "dependencies": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePlanificationStatusDto": {
+        "type": "object",
+        "properties": {
+          "listeId": {
+            "$ref": "#/components/schemas/EtatListe"
           }
         },
         "additionalProperties": false

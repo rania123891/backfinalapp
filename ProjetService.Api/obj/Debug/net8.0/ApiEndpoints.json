@@ -172,6 +172,32 @@
   },
   {
     "ContainingType": "ProjetService.Api.Controllers.EquipeController",
+    "Method": "GetMembresByEquipe",
+    "RelativePath": "api/equipes/{equipeId}/membres",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.MembreEquipe, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.EquipeController",
     "Method": "AjouterMembres",
     "RelativePath": "api/equipes/{equipeId}/membres",
     "HttpMethod": "POST",
@@ -276,16 +302,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Liste, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "GetAll",
-    "RelativePath": "api/listes",
+    "ContainingType": "ProjetService.Api.Controllers.EquipeController",
+    "Method": "GetAllMembres",
+    "RelativePath": "api/equipes/membres",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.Liste, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.MembreEquipe, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -296,22 +322,22 @@
     ]
   },
   {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Liste, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Create",
-    "RelativePath": "api/listes",
+    "ContainingType": "ProjetService.Api.Controllers.ETAController",
+    "Method": "PredireDureeTache",
+    "RelativePath": "api/eta/predict",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "entity",
-        "Type": "ProjetService.Domain.Models.Liste",
+        "Name": "request",
+        "Type": "ProjetService.Api.Controllers.PredictionRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "ProjetService.Domain.Models.Liste",
+        "Type": "ProjetService.Infrastructure.Services.ETAResult",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -322,22 +348,22 @@
     ]
   },
   {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Liste, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "GetById",
-    "RelativePath": "api/listes/{id}",
-    "HttpMethod": "GET",
+    "ContainingType": "ProjetService.Api.Controllers.ETAController",
+    "Method": "PredirePlusieurs",
+    "RelativePath": "api/eta/predict-batch",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "requests",
+        "Type": "System.Collections.Generic.List\u00601[[ProjetService.Api.Controllers.PredictionRequest, ProjetService.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "ProjetService.Domain.Models.Liste",
+        "Type": "System.Collections.Generic.List\u00601[[ProjetService.Api.Controllers.ETAResultWithId, ProjetService.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -348,56 +374,49 @@
     ]
   },
   {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Liste, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Update",
-    "RelativePath": "api/listes/{id}",
-    "HttpMethod": "PUT",
+    "ContainingType": "ProjetService.Api.Controllers.ETAController",
+    "Method": "PredireNouvelleTache",
+    "RelativePath": "api/eta/predict-new",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "entity",
-        "Type": "ProjetService.Domain.Models.Liste",
+        "Name": "request",
+        "Type": "ProjetService.Api.Controllers.NouvelleTacheRequest",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Liste, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Delete",
-    "RelativePath": "api/listes/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "ProjetService.Infrastructure.Services.ETAResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
-    "ContainingType": "ProjetService.Api.Controllers.ListeController",
-    "Method": "GetListesByTableau",
-    "RelativePath": "api/listes/tableau/{tableauId}",
+    "ContainingType": "ProjetService.Api.Controllers.ETAController",
+    "Method": "GetStatistiques",
+    "RelativePath": "api/eta/stats",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "tableauId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.ETAController",
+    "Method": "EntrainerModele",
+    "RelativePath": "api/eta/train",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -510,6 +529,151 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ProjetService.Api.Controllers.PlanificationController",
+    "Method": "GetPlanifications",
+    "RelativePath": "api/planifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.Planification, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.PlanificationController",
+    "Method": "CreatePlanification",
+    "RelativePath": "api/planifications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ProjetService.Domain.Dto.CreatePlanificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjetService.Domain.Models.Planification",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.PlanificationController",
+    "Method": "GetPlanification",
+    "RelativePath": "api/planifications/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjetService.Domain.Models.Planification",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.PlanificationController",
+    "Method": "DeletePlanification",
+    "RelativePath": "api/planifications/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.PlanificationController",
+    "Method": "UpdatePlanificationStatus",
+    "RelativePath": "api/planifications/{id}/statut",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "ProjetService.Domain.Dto.UpdatePlanificationStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjetService.Domain.Models.Planification",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.PlanificationController",
+    "Method": "GetPlanificationsByDate",
+    "RelativePath": "api/planifications/date/{date}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.Planification, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Projet, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "GetAll",
     "RelativePath": "api/projets",
@@ -612,147 +776,6 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Tableau, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "GetAll",
-    "RelativePath": "api/tableaux",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.Tableau, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Tableau, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Create",
-    "RelativePath": "api/tableaux",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "entity",
-        "Type": "ProjetService.Domain.Models.Tableau",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ProjetService.Domain.Models.Tableau",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Tableau, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "GetById",
-    "RelativePath": "api/tableaux/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ProjetService.Domain.Models.Tableau",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Tableau, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Update",
-    "RelativePath": "api/tableaux/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "entity",
-        "Type": "ProjetService.Domain.Models.Tableau",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Tableau, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Delete",
-    "RelativePath": "api/tableaux/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.TableauController",
-    "Method": "GetListesByTableau",
-    "RelativePath": "api/tableaux/{tableauId}/listes",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "tableauId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.TableauController",
-    "Method": "GetTableauxByProjet",
-    "RelativePath": "api/tableaux/projet/{projetId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "projetId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -887,21 +910,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "ProjetService.Api.Controllers.TacheController",
-    "Method": "GetTachesByListe",
-    "RelativePath": "api/taches/liste/{listeId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "listeId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]

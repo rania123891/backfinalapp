@@ -13,6 +13,8 @@ using ProjetService.Domain.Interfaces;
 using System.Text;
 using ProjetService.Domain.Interface;
 using ProjetService.Infra.Services;
+using System.Text.Json.Serialization;
+using ProjetService.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -110,7 +112,23 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 // ? Ajouter les contrôleurs
-builder.Services.AddControllers();
+// Dans Program.cs, après builder.Services.AddControllers()
+// Ajouter cette ligne dans votre Program.cs
+builder.Services.AddScoped<IETAPredictionService, ETAPredictionService>();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // Gérer les cycles de référence
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+
+        // Optionnel : améliorer la lisibilité
+        options.JsonSerializerOptions.WriteIndented = true;
+
+        // Ignorer les propriétés null
+        options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+    });
+// Ajouter dans votre Program.cs existant :
+builder.Services.AddScoped<IPlanificationRepository, PlanificationRepository>();
 
 var app = builder.Build();
 

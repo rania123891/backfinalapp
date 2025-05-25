@@ -11,6 +11,8 @@ namespace UserService.Domain.Interfaces
         void Update(Utilisateur utilisateur);
         void Delete(Utilisateur utilisateur);
         Task<IEnumerable<Utilisateur>> GetAllAsync();
+        Task<Utilisateur> GetByIdAsync(int id);
+        Task UpdateAsync(Utilisateur utilisateur);
 
     }
 }

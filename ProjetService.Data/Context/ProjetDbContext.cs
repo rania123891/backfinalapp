@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjetService.Domain.Models;
+
 namespace ProjetService.Data.Context
 {
     public class ProjetDbContext : DbContext
@@ -8,68 +9,105 @@ namespace ProjetService.Data.Context
         public DbSet<Equipe> Equipes { get; set; }
         public DbSet<Projet> Projets { get; set; }
         public DbSet<MembreEquipe> MembresEquipe { get; set; }
-        public DbSet<Tableau> Tableaux { get; set; }
         public DbSet<Commentaire> Commentaires { get; set; }
-        public DbSet<Liste> Listes { get; set; }
+        public DbSet<Planification> Planifications { get; set; }
 
         public ProjetDbContext(DbContextOptions<ProjetDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // ✅ Relation Projet → Taches
-            modelBuilder.Entity<Projet>()
-                .HasMany(p => p.Taches)
-                .WithOne(t => t.Projet)
-                .HasForeignKey(t => t.ProjetId)
-                .OnDelete(DeleteBehavior.Restrict);
+            base.OnModelCreating(modelBuilder);
 
-            // ✅ Relation Projet → Equipes
-            modelBuilder.Entity<Projet>()
-                .HasMany(p => p.Equipes)
-                .WithOne(e => e.Projet)
-                .HasForeignKey(e => e.ProjetId)
-                .OnDelete(DeleteBehavior.Cascade);
+            // ✅ Configuration Planification
+            modelBuilder.Entity<Planification>(entity =>
+            {
+                entity.HasKey(e => e.Id);
 
-            // ✅ Relation Projet → Tableaux
-            modelBuilder.Entity<Projet>()
-                .HasMany(p => p.Tableaux)
-                .WithOne(t => t.Projet)
-                .HasForeignKey(t => t.ProjetId)
-                .OnDelete(DeleteBehavior.Cascade);
+                entity.Property(e => e.Date)
+                    .IsRequired();
 
-            // ✅ Relation Tableau → Listes
-            modelBuilder.Entity<Tableau>()
-                .HasMany(t => t.Listes)
-                .WithOne(l => l.Tableau)
-                .HasForeignKey(l => l.TableauId)
-                .OnDelete(DeleteBehavior.Cascade);
+                entity.Property(e => e.HeureDebut)
+                    .IsRequired()
+                    .HasColumnName("heure_debut");
 
-            // ✅ Relation Liste → Taches
-            modelBuilder.Entity<Liste>()
-                .HasMany(l => l.Taches)
-                .WithOne(t => t.Liste)
-                .HasForeignKey(t => t.ListeId)
-                .OnDelete(DeleteBehavior.Cascade);
+                entity.Property(e => e.HeureFin)
+                    .IsRequired()
+                    .HasColumnName("heure_fin");
 
-            // ✅ Relation Tache → Commentaires
-            modelBuilder.Entity<Tache>()
-                .HasMany(t => t.Commentaires)
-                .WithOne(c => c.Tache)
-                .HasForeignKey(c => c.TacheId)
-                .OnDelete(DeleteBehavior.Restrict);
+                entity.Property(e => e.Description)
+                    .HasMaxLength(1000);
 
-            // ✅ Relation Equipe → MembresEquipe
-            modelBuilder.Entity<MembreEquipe>()
-                .HasOne(me => me.Equipe)
-                .WithMany(e => e.MembresEquipe)
-                .HasForeignKey(me => me.EquipeId)
-                .OnDelete(DeleteBehavior.Cascade);
+                entity.Property(e => e.TacheId)
+                    .IsRequired()
+                    .HasColumnName("tache_id");
 
-            // ✅ Stockage des IDs utilisateurs (UserService)
-            modelBuilder.Entity<Projet>().Property(p => p.CreateurId).IsRequired();
-            modelBuilder.Entity<Tache>().Property(t => t.AssigneId).IsRequired();
-            modelBuilder.Entity<Commentaire>().Property(c => c.UtilisateurId).IsRequired();
-            modelBuilder.Entity<MembreEquipe>().Property(me => me.UtilisateurId).IsRequired();
+                entity.Property(e => e.ProjetId)
+                    .IsRequired()
+                    .HasColumnName("projet_id");
+
+                entity.Property(e => e.ListeId)
+                    .IsRequired()
+                    .HasColumnName("liste_id")
+                    .HasDefaultValue(EtatListe.Todo);
+
+                // Relations Planification
+                entity.HasOne(d => d.Tache)
+                    .WithMany(t => t.Planifications)
+                    .HasForeignKey(d => d.TacheId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(d => d.Projet)
+                    .WithMany(p => p.Planifications)
+                    .HasForeignKey(d => d.ProjetId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                // Index pour améliorer les performances
+                entity.HasIndex(e => e.Date)
+                    .HasDatabaseName("IX_Planifications_Date");
+
+                entity.HasIndex(e => new { e.Date, e.HeureDebut })
+                    .HasDatabaseName("IX_Planifications_Date_HeureDebut");
+            });
+
+            // ✅ Configuration Projet
+            modelBuilder.Entity<Projet>(entity =>
+            {
+                entity.Property(p => p.CreateurId).IsRequired();
+
+                // Relation Projet → Equipes
+                entity.HasMany(p => p.Equipes)
+                    .WithOne(e => e.Projet)
+                    .HasForeignKey(e => e.ProjetId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // ✅ Configuration Tache
+            modelBuilder.Entity<Tache>(entity =>
+            {
+                // Relation Tache → Commentaires
+                entity.HasMany(t => t.Commentaires)
+                    .WithOne(c => c.Tache)
+                    .HasForeignKey(c => c.TacheId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            // ✅ Configuration MembreEquipe
+            modelBuilder.Entity<MembreEquipe>(entity =>
+            {
+                entity.Property(me => me.UtilisateurId).IsRequired();
+
+                // Relation Equipe → MembresEquipe
+                entity.HasOne(me => me.Equipe)
+                    .WithMany(e => e.MembresEquipe)
+                    .HasForeignKey(me => me.EquipeId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // ✅ Configuration Commentaire
+            modelBuilder.Entity<Commentaire>(entity =>
+            {
+                entity.Property(c => c.UtilisateurId).IsRequired();
+            });
         }
     }
 }

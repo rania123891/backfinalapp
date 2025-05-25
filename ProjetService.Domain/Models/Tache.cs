@@ -11,12 +11,6 @@ namespace ProjetService.Domain.Models
         Moyenne,
         Elevee
     }
-    public enum StatutTache
-    {
-        EnCours,
-        Terminee,
-        Annulee
-    }
 
     public class Tache
     {
@@ -26,29 +20,16 @@ namespace ProjetService.Domain.Models
         [Required]
         public string Titre { get; set; }
 
-        public string Description { get; set; }
-
-        [Required]
-        public StatutTache Statut { get; set; }
 
         [Required]
         public PrioriteTache Priorite { get; set; }
 
-        public DateTime DateCreation { get; set; } = DateTime.UtcNow;
-        public DateTime DateEcheance { get; set; }
 
-        // ✅ Garder uniquement `projetId`
-        public int ProjetId { get; set; }
-
-        public Projet? Projet { get; set; }  // 🔥 Vérifier que ceci est `nullable`
-
-        // ✅ Garder uniquement `listeId`
-        public int ListeId { get; set; }
-
-        public Liste? Liste { get; set; }  // 🔥 Vérifier que ceci est `nullable`
-
-        public int AssigneId { get; set; }
+     
+       
         public ICollection<Commentaire>? Commentaires { get; set; } = new List<Commentaire>();
+        public virtual ICollection<Planification> Planifications { get; set; }
+
 
     }
 

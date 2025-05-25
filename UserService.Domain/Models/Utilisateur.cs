@@ -18,5 +18,6 @@
         public RoleUtilisateur Role { get; set; } = RoleUtilisateur.User;
 
         public DateTime DateCreation { get; set; } = DateTime.UtcNow;
+        public string? ProfilePhotoUrl { get; set; }  // Ajout de la nouvelle propriété
     }
 }

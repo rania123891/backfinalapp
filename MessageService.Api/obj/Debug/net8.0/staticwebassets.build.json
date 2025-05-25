@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "tye+3NY+mrLdCtEDjS0ywDsBWJEK3GqWp+3zvNbwhrA=",
+  "Source": "MessageService.Api",
+  "BasePath": "_content/MessageService.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

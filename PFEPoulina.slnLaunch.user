@@ -3,15 +3,19 @@
     "Name": "Nouveau profil",
     "Projects": [
       {
+        "Path": "ApGateway\\ApGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MessageService.Api\\MessageService.Api.csproj",
+        "Action": "Start"
+      },
+      {
         "Path": "UserService.Api\\UserService.Api.csproj",
         "Action": "Start"
       },
       {
         "Path": "ProjetService.Api\\ProjetService.Api.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "ApGateway\\ApGateway.csproj",
         "Action": "Start"
       }
     ]

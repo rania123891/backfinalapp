@@ -33,8 +33,9 @@ namespace ProjetService.Domain.Models
 
         // ✅ Relation avec les entités liées (nullable)
         public ICollection<Equipe>? Equipes { get; set; }
-        public ICollection<Tableau>? Tableaux { get; set; }
         public ICollection<Tache>? Taches { get; set; }
+        public virtual ICollection<Planification> Planifications { get; set; }
+
     }
 
 }

@@ -28,6 +28,7 @@ C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\ApGateway.
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\ApGateway.csproj.CoreCompileInputs.cache
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\ApGateway.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\ApGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\ApGateway.sourcelink.json
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\scopedcss\bundle\ApGateway.styles.css
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\staticwebassets.development.json
@@ -38,7 +39,6 @@ C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\staticweba
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApGateway.props
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApGateway.props
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\ApGateway.csproj.Up2Date
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\ApGateway.dll
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\ApGateway\obj\Debug\net8.0\refint\ApGateway.dll

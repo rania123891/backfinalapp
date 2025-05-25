@@ -1,0 +1,13 @@
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\MessageService.Domain.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\MessageService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\MessageService.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\MessageService.Domain.AssemblyInfo.cs
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\MessageService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\MessageService.Domain.sourcelink.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\bin\Debug\net8.0\MessageService.Domain.deps.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\bin\Debug\net8.0\MessageService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\bin\Debug\net8.0\MessageService.Domain.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\MessageService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\refint\MessageService.Domain.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\MessageService.Domain.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\ref\MessageService.Domain.dll

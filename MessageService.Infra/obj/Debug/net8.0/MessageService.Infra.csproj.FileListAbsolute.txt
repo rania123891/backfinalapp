@@ -1,0 +1,12 @@
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\bin\Debug\net8.0\MessageService.Infra.deps.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\bin\Debug\net8.0\MessageService.Infra.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\bin\Debug\net8.0\MessageService.Infra.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\MessageService.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\MessageService.Infra.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\MessageService.Infra.AssemblyInfo.cs
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\MessageService.Infra.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\MessageService.Infra.sourcelink.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\MessageService.Infra.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\refint\MessageService.Infra.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\MessageService.Infra.pdb
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Infra\obj\Debug\net8.0\ref\MessageService.Infra.dll
