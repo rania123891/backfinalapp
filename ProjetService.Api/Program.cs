@@ -15,6 +15,8 @@ using ProjetService.Domain.Interface;
 using ProjetService.Infra.Services;
 using System.Text.Json.Serialization;
 using ProjetService.Infrastructure.Services;
+using System.Security.Claims;
+using ProjetService.Domain.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,14 +41,19 @@ builder.Services.AddDbContext<ProjetDbContext>(options =>
 
 // ? Enregistrer les dépendances (Repositories, Services, etc.)
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddScoped<ICommandProcessor, CommandProcessor>(); // ?? ajoute cette ligne ici
+builder.Services.AddScoped<ICommandProcessor, CommandProcessor>();
 
 
 // ? Configurer MediatR
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
+//builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssemblyContaining<Program>();
+    cfg.RegisterServicesFromAssemblyContaining<CreateProjetCommand>();
+});
 
 // ? Configurer l'authentification JWT
-var key = Encoding.ASCII.GetBytes(jwtSecret);
+var key = Encoding.ASCII.GetBytes("VotreCleSecreteTresLongueEtComplexe");
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -61,7 +68,9 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ValidateIssuer = false,
-        ValidateAudience = false
+        ValidateAudience = false,
+        NameClaimType = ClaimTypes.NameIdentifier,
+        RoleClaimType = ClaimTypes.Role
     };
 });
 
@@ -84,31 +93,32 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjetService API", Version = "v1" });
 
-    // ? Ajouter JWT dans Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
         Type = SecuritySchemeType.Http,
-        Scheme = "Bearer",
+        Scheme = "bearer",  // en minuscules, important
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Entrer 'Bearer <TOKEN>' pour s'authentifier"
+        Description = "Entrer 'Bearer <token>' dans le champ"
     });
 
+
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
+{
     {
+        new OpenApiSecurityScheme
         {
-            new OpenApiSecurityScheme
+            Reference = new OpenApiReference
             {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new string[] { }
-        }
-    });
+                Type = ReferenceType.SecurityScheme,
+                Id = "Bearer"
+            }
+        },
+        new string[] {}
+    }
+});
+
 });
 
 // ? Ajouter les contrôleurs
@@ -138,7 +148,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+// Debugging JWT - À SUPPRIMER APRÈS
+// Debugging JWT - À SUPPRIMER APRÈS
+app.Use(async (context, next) =>
+{
+    Console.WriteLine($"DEBUG - Requête reçue: {context.Request.Method} {context.Request.Path}");
+    Console.WriteLine($"DEBUG - Authorization header: {context.Request.Headers["Authorization"].FirstOrDefault()}");
 
+    await next();
+
+    Console.WriteLine($"DEBUG - Réponse: {context.Response.StatusCode}");
+});
 app.UseRouting();
 app.UseCors("AllowAllOrigins");
 app.UseAuthentication();

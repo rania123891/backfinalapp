@@ -4,6 +4,7 @@ using ProjetService.Domain.Interfaces;
 using MediatR;
 using ProjetService.Domain.DTO;
 using Microsoft.EntityFrameworkCore;
+using ProjetService.Domain.Models.ProjetService.Domain.Models;
 
 namespace ProjetService.Api.Controllers
 {
@@ -13,15 +14,19 @@ namespace ProjetService.Api.Controllers
     {
         private readonly IGenericRepository<Equipe> _equipeRepository;
         private readonly IGenericRepository<MembreEquipe> _membreEquipeRepository;
+        private readonly IGenericRepository<ProjetEquipe> _projetEquipeRepository;
+
 
         public EquipeController(
-            IMediator mediator,
-            IGenericRepository<Equipe> equipeRepository,
-            IGenericRepository<MembreEquipe> membreEquipeRepository)
-            : base(mediator, equipeRepository)
+        IMediator mediator,
+        IGenericRepository<Equipe> equipeRepository,
+        IGenericRepository<MembreEquipe> membreEquipeRepository,
+        IGenericRepository<ProjetEquipe> projetEquipeRepository)
+        : base(mediator, equipeRepository)
         {
             _equipeRepository = equipeRepository;
             _membreEquipeRepository = membreEquipeRepository;
+            _projetEquipeRepository = projetEquipeRepository;
         }
 
         // GET: api/equipes/membres
@@ -72,5 +77,39 @@ namespace ProjetService.Api.Controllers
             await _membreEquipeRepository.DeleteByIdAsync(membreEquipeId);
             return Ok();
         }
+        [HttpPost("{equipeId}/affecter-projet")]
+        public async Task<IActionResult> AffecterProjet(int equipeId, [FromBody] int projetId)
+        {
+            // Vérifie que cette liaison n’existe pas déjà
+            var existingRelations = await _projetEquipeRepository.GetAllAsync();
+            bool existe = existingRelations.Any(pe => pe.ProjetId == projetId && pe.EquipeId == equipeId);
+
+            if (existe)
+                return BadRequest("Cette équipe est déjà affectée à ce projet.");
+
+            // Crée la liaison
+            var projetEquipe = new ProjetEquipe
+            {
+                ProjetId = projetId,
+                EquipeId = equipeId
+            };
+
+            await _projetEquipeRepository.AddAsync(projetEquipe);
+
+            return Ok("Equipe affectée au projet.");
+        }
+        [HttpGet("{equipeId}/projets")]
+        public async Task<IActionResult> GetProjetsDeLEquipe(int equipeId)
+        {
+            var relations = await _projetEquipeRepository.GetAllAsync();
+            var projetsIds = relations
+                .Where(pe => pe.EquipeId == equipeId)
+                .Select(pe => pe.ProjetId)
+                .ToList();
+
+            return Ok(projetsIds); // ou retourne directement les projets si tu charges les entités
+        }
+
+
     }
 }

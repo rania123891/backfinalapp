@@ -58,22 +58,14 @@ namespace ProjetService.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdEquipe"));
 
-                    b.Property<int>("DomaineActivite")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nom")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ProjetId")
-                        .HasColumnType("int");
 
                     b.Property<int>("Statut")
                         .HasColumnType("int");
 
                     b.HasKey("IdEquipe");
-
-                    b.HasIndex("ProjetId");
 
                     b.ToTable("Equipes");
                 });
@@ -143,6 +135,10 @@ namespace ProjetService.Data.Migrations
                         .HasColumnType("int")
                         .HasColumnName("tache_id");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int")
+                        .HasColumnName("user_id");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Date")
@@ -194,6 +190,21 @@ namespace ProjetService.Data.Migrations
                     b.ToTable("Projets");
                 });
 
+            modelBuilder.Entity("ProjetService.Domain.Models.ProjetService.Domain.Models.ProjetEquipe", b =>
+                {
+                    b.Property<int>("ProjetId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EquipeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProjetId", "EquipeId");
+
+                    b.HasIndex("EquipeId");
+
+                    b.ToTable("ProjetEquipe");
+                });
+
             modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>
                 {
                     b.Property<int>("Id")
@@ -202,10 +213,10 @@ namespace ProjetService.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Priorite")
+                    b.Property<int>("EquipeId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ProjetId")
+                    b.Property<int>("Priorite")
                         .HasColumnType("int");
 
                     b.Property<string>("Titre")
@@ -214,7 +225,7 @@ namespace ProjetService.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProjetId");
+                    b.HasIndex("EquipeId");
 
                     b.ToTable("Taches");
                 });
@@ -228,17 +239,6 @@ namespace ProjetService.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Tache");
-                });
-
-            modelBuilder.Entity("ProjetService.Domain.Models.Equipe", b =>
-                {
-                    b.HasOne("ProjetService.Domain.Models.Projet", "Projet")
-                        .WithMany("Equipes")
-                        .HasForeignKey("ProjetId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Projet");
                 });
 
             modelBuilder.Entity("ProjetService.Domain.Models.MembreEquipe", b =>
@@ -271,25 +271,50 @@ namespace ProjetService.Data.Migrations
                     b.Navigation("Tache");
                 });
 
+            modelBuilder.Entity("ProjetService.Domain.Models.ProjetService.Domain.Models.ProjetEquipe", b =>
+                {
+                    b.HasOne("ProjetService.Domain.Models.Equipe", "Equipe")
+                        .WithMany("ProjetsEquipes")
+                        .HasForeignKey("EquipeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjetService.Domain.Models.Projet", "Projet")
+                        .WithMany("ProjetsEquipes")
+                        .HasForeignKey("ProjetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Equipe");
+
+                    b.Navigation("Projet");
+                });
+
             modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>
                 {
-                    b.HasOne("ProjetService.Domain.Models.Projet", null)
+                    b.HasOne("ProjetService.Domain.Models.Equipe", "Equipe")
                         .WithMany("Taches")
-                        .HasForeignKey("ProjetId");
+                        .HasForeignKey("EquipeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Equipe");
                 });
 
             modelBuilder.Entity("ProjetService.Domain.Models.Equipe", b =>
                 {
                     b.Navigation("MembresEquipe");
+
+                    b.Navigation("ProjetsEquipes");
+
+                    b.Navigation("Taches");
                 });
 
             modelBuilder.Entity("ProjetService.Domain.Models.Projet", b =>
                 {
-                    b.Navigation("Equipes");
-
                     b.Navigation("Planifications");
 
-                    b.Navigation("Taches");
+                    b.Navigation("ProjetsEquipes");
                 });
 
             modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>

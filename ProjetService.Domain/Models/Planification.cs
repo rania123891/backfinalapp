@@ -48,6 +48,9 @@ namespace ProjetService.Domain.Models
         [Required]
         [Column("liste_id")]
         public EtatListe ListeId { get; set; } = EtatListe.Todo;  // Valeur par défaut : Todo
+        [Required]
+        [Column("user_id")]
+        public int UserId { get; set; }
 
         [ForeignKey("TacheId")]
         public virtual Tache Tache { get; set; }

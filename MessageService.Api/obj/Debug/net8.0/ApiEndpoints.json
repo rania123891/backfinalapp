@@ -1,5 +1,137 @@
 [
   {
+    "ContainingType": "MessageService.Api.Controllers.AttachmentsController",
+    "Method": "DeleteAttachment",
+    "RelativePath": "api/Attachments/{attachmentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attachmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.AttachmentsController",
+    "Method": "DownloadAttachment",
+    "RelativePath": "api/Attachments/{attachmentId}/download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attachmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.AttachmentsController",
+    "Method": "GetAttachmentInfo",
+    "RelativePath": "api/Attachments/{attachmentId}/info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attachmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.AttachmentsController",
+    "Method": "PreviewAttachment",
+    "RelativePath": "api/Attachments/{attachmentId}/preview",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attachmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.FileController",
+    "Method": "DownloadFile",
+    "RelativePath": "api/File/download/{fileId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.FileController",
+    "Method": "GetInfo",
+    "RelativePath": "api/File/info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.FileController",
+    "Method": "PreviewFile",
+    "RelativePath": "api/File/preview/{fileId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.FileController",
+    "Method": "UploadFile",
+    "RelativePath": "api/File/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "expediteurId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "destinataireId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MessageService.Api.Controllers.MessagesController",
     "Method": "GetMessagesByUser",
     "RelativePath": "api/Messages/{userId}",
@@ -27,8 +159,91 @@
   },
   {
     "ContainingType": "MessageService.Api.Controllers.MessagesController",
+    "Method": "GetMessageById",
+    "RelativePath": "api/Messages/message/{messageId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MessageService.Domain.Models.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.MessagesController",
     "Method": "EnvoyerMessage",
     "RelativePath": "api/Messages/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MessageService.Domain.DTOs.CreateMessageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.MessagesController",
+    "Method": "EnvoyerMessageAvecFichiers",
+    "RelativePath": "api/Messages/send-with-attachments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Contenu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpediteurEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailDestinataire",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExpediteurId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DestinataireId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Attachments",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MessageService.Api.Controllers.MessagesController",
+    "Method": "SimpleSendMessage",
+    "RelativePath": "api/Messages/simple-send",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

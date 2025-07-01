@@ -1,18 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace MessageService.Domain.Models
 {
     public class Message
     {
+        [Key]
         public Guid Id { get; set; }
-        public string Contenu { get; set; }
-        public string ExpediteurId { get; set; }  // Changé en string pour correspondre à l'ID utilisateur
-        public string DestinataireId { get; set; }
-        public DateTime EnvoyeLe { get; set; }
-    }
 
+        [Required]
+        public string Contenu { get; set; } = string.Empty;
+
+        [Required]
+        public string ExpediteurId { get; set; } = string.Empty;
+
+        [Required]
+        public string DestinataireId { get; set; } = string.Empty;
+
+        public DateTime EnvoyeLe { get; set; }
+
+        public bool Lu { get; set; }
+
+        // Navigation property pour les attachements
+        public virtual ICollection<MessageAttachment>? Attachments { get; set; }
+    }
 }

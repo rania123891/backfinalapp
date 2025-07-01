@@ -199,6 +199,62 @@
         }
       }
     },
+    "/api/Utilisateur/for-selection": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Utilisateur/search": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Utilisateur/{id}/basic": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Utilisateur/upload-photo": {
       "post": {
         "tags": [
@@ -235,6 +291,18 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Utilisateur/for-messaging": {
+      "get": {
+        "tags": [
+          "Utilisateur"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -315,7 +383,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "Entrez 'Bearer' [espace] et le token JWT.\r\nExemple: \"Bearer 12345abcdef\"",
+        "description": "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
         "name": "Authorization",
         "in": "header"
       }

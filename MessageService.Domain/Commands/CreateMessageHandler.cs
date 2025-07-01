@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using MessageService.Domain.Commands;
-using MessageService.Data.Repositories;
+using MessageService.Domain.Interfaces;
 using MessageService.Domain.Models;
 
 namespace MessageService.Domain.Handlers;

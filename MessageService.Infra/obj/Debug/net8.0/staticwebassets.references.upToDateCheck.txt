@@ -1,0 +1,3 @@
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Domain\obj\Debug\net8.0\staticwebassets.build.json

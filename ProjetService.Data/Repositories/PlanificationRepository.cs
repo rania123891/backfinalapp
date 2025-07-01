@@ -66,5 +66,37 @@ namespace ProjetService.Data.Repositories
             await UpdateAsync(planification);
             return await GetByIdWithIncludesAsync(planification.Id);
         }
+        public async Task<IEnumerable<Planification>> GetByUserIdAsync(int userId)
+        {
+            return await _context.Planifications
+                .Include(p => p.Tache)
+                .Include(p => p.Projet)
+                .Where(p => p.UserId == userId)
+                .OrderBy(p => p.Date)
+                .ThenBy(p => p.HeureDebut)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Planification>> GetByUserIdAndDateAsync(int userId, DateTime date)
+        {
+            return await _context.Planifications
+                .Include(p => p.Tache)
+                .Include(p => p.Projet)
+                .Where(p => p.UserId == userId && p.Date.Date == date.Date)
+                .OrderBy(p => p.HeureDebut)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Planification>> GetAllByUserIdWithIncludesAsync(int userId)
+        {
+            return await _context.Planifications
+                .Include(p => p.Tache)
+                .Include(p => p.Projet)
+                .Where(p => p.UserId == userId)
+                .OrderBy(p => p.Date)
+                .ThenBy(p => p.HeureDebut)
+                .ToListAsync();
+        }
+      
     }
 }

@@ -1,6 +1,6 @@
 ﻿// MessageService.Domain/Queries/GetMessagesByUserHandler.cs
 using MediatR;
-using MessageService.Data.Repositories;
+using MessageService.Domain.Interfaces;
 using MessageService.Domain.DTOs;
 using MessageService.Domain.Queries;
 using System.Text.Json;
@@ -18,7 +18,7 @@ public class GetMessagesByUserHandler : IRequestHandler<GetMessagesByUserQuery, 
             BaseAddress = new Uri("http://localhost:5093/")
         };
     }
-
+    
     public async Task<List<MessageDto>> Handle(GetMessagesByUserQuery request, CancellationToken cancellationToken)
     {
         var messages = await _repository.GetMessagesByUserAsync(request.UserId);

@@ -16,6 +16,7 @@ namespace ProjetService.Domain.DTO
         public int TacheId { get; set; }
         public int ProjetId { get; set; }
         public EtatListe ListeId { get; set; } = EtatListe.Todo;
+        public int UserId { get; set; }
     }
 
     public class UpdatePlanificationDto
@@ -28,6 +29,7 @@ namespace ProjetService.Domain.DTO
         public int TacheId { get; set; }
         public int ProjetId { get; set; }
         public EtatListe ListeId { get; set; }
+        public int UserId { get; set; }
     }
 
     public class UpdatePlanificationStatusDto

@@ -1,7 +1,9 @@
 wwwroot\profile-photos\08ff0fa5-8fb4-428f-9aaf-520f4cfb1f5e.png
 wwwroot\profile-photos\1c9aea49-d838-40f2-be52-effa98fc4e2e.png
+wwwroot\profile-photos\1fc70873-8907-42d3-a0f6-e1d61c94fd52.jpg
 wwwroot\profile-photos\27047bca-f77f-400e-9645-03324e5f6f31.jpg
 wwwroot\profile-photos\382f3807-6378-45c9-9f44-e0aa12bbda3f.jpg
+wwwroot\profile-photos\5d847c7a-e2fb-47f7-80bd-77616d5e8520.png
 wwwroot\profile-photos\8aca03b8-f15d-4a1b-90bb-abc351488c19.jpg
 wwwroot\profile-photos\a4ab2c00-fd7a-482a-addd-f5b2499edd61.png
 wwwroot\profile-photos\c306ef2b-06e6-40e6-8f23-231fd10448aa.jpg

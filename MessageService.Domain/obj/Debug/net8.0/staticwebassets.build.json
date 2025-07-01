@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "XySrNpbkHKehJxwRvUUmTn99b8x4qc2irriJYAss8HY=",
+  "Source": "MessageService.Domain",
+  "BasePath": "_content/MessageService.Domain",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

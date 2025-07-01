@@ -182,7 +182,6 @@ C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\stat
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UserService.Api.props
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UserService.Api.props
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\UserServ.B5470E7C.Up2Date
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\UserService.Api.dll
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\refint\UserService.Api.dll
@@ -190,3 +189,4 @@ C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\User
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\UserService.Api.genruntimeconfig.cache
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\ref\UserService.Api.dll
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\bin\Debug\net8.0\UserService.Api.staticwebassets.runtime.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

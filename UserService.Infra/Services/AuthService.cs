@@ -40,9 +40,11 @@ namespace UserService.Infra.Services
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.NameIdentifier, utilisateur.Id.ToString()),
-                    new Claim(ClaimTypes.Email, utilisateur.Email),
-                    new Claim(ClaimTypes.Role, utilisateur.Role.ToString())
+            new Claim(ClaimTypes.NameIdentifier, utilisateur.Id.ToString()),
+            new Claim(ClaimTypes.Email, utilisateur.Email),
+            new Claim(ClaimTypes.Role, utilisateur.Role.ToString()),
+            new Claim("nom", utilisateur.Nom ?? ""),         // ✅ Ajouté
+            new Claim("prenom", utilisateur.Prenom ?? "")    // ✅ Ajouté
                 }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

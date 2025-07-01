@@ -1,12 +1,43 @@
 {
   "Version": 1,
-  "Hash": "tye+3NY+mrLdCtEDjS0ywDsBWJEK3GqWp+3zvNbwhrA=",
+  "Hash": "GYNotbKjrZX75Qp8VzsqW0pPL2NJcg5iNks7pVW86O0=",
   "Source": "MessageService.Api",
   "BasePath": "_content/MessageService.Api",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\MessageService.Domain.csproj",
+      "Version": 2,
+      "Source": "MessageService.Domain",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\MessageService.Infra.csproj",
+      "Version": 2,
+      "Source": "MessageService.Infra",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MessageService.Api\\wwwroot",
+      "Source": "MessageService.Api",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\wwwroot\\",
+      "BasePath": "_content/MessageService.Api",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }

@@ -24,9 +24,15 @@ namespace ProjetService.Domain.Models
         [Required]
         public PrioriteTache Priorite { get; set; }
 
+        // clé étrangère vers Equipe
+        public int EquipeId { get; set; }
 
-     
-       
+        // navigation vers Equipe
+        [ForeignKey("EquipeId")]
+        public Equipe Equipe { get; set; }
+
+
+
         public ICollection<Commentaire>? Commentaires { get; set; } = new List<Commentaire>();
         public virtual ICollection<Planification> Planifications { get; set; }
 

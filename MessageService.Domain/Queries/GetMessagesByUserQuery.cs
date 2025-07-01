@@ -1,4 +1,4 @@
-﻿using MediatR;
+﻿ using MediatR;
 using MessageService.Domain.DTOs;
 
 namespace MessageService.Domain.Queries;

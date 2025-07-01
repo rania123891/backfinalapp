@@ -20,6 +20,11 @@
   <ItemGroup>
     <ProjectReference Include="..\MessageService.Data\MessageService.Data.csproj" />
     <ProjectReference Include="..\MessageService.Domain\MessageService.Domain.csproj" />
+    <ProjectReference Include="..\MessageService.Infra\MessageService.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\message-attachments\" />
   </ItemGroup>
 
 </Project>

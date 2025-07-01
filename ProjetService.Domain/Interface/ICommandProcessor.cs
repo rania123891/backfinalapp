@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetService.Domain.Interface
 {
-   
+
     public interface ICommandProcessor
     {
         Task<CommandResult> ProcessAsync(string command);
@@ -18,6 +18,8 @@ namespace ProjetService.Domain.Interface
         public string Message { get; set; }
         public object Data { get; set; }
         public CommandType Type { get; set; }
+        public float Confidence { get; set; } // Niveau de confiance
+        public Dictionary<string, object> ExtractedData { get; set; } = new Dictionary<string, object>();
     }
 
     public enum CommandType
@@ -25,6 +27,8 @@ namespace ProjetService.Domain.Interface
         Planification,
         Projet,
         Tache,
+        Equipe,
+        Membre,
         General
     }
 }

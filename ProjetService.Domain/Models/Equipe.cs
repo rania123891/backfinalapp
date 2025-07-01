@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjetService.Domain.Models;
+using ProjetService.Domain.Models.ProjetService.Domain.Models;
 
 namespace ProjetService.Domain.Models
 {
@@ -15,12 +17,7 @@ namespace ProjetService.Domain.Models
         Inactive
     }
 
-    public enum Domaine
-    {
-        FrontEnd,
-        BackEnd,
-        BaseDonnee
-    }
+    
 
     public class Equipe
     {
@@ -31,14 +28,13 @@ namespace ProjetService.Domain.Models
         public string Nom { get; set; }
 
         public StatutEquipe Statut { get; set; }
-        public Domaine DomaineActivite { get; set; }
 
-        // ✅ Garder uniquement `projetId`
-        public int ProjetId { get; set; }
-        public Projet? Projet { get; set; } // 🔥 Nullable
+        public ICollection<ProjetEquipe> ProjetsEquipes { get; set; }
 
         // ✅ Relation avec MembresEquipe
         public ICollection<MembreEquipe>? MembresEquipe { get; set; }
+        public ICollection<Tache> Taches { get; set; } = new List<Tache>();
+
     }
 
 }

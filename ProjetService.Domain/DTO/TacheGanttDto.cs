@@ -12,7 +12,6 @@ namespace ProjetService.Domain.DTO
         public string Name { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
-        public string Dependencies { get; set; } = ""; // Vide pour l'instant
+        public string Dependencies { get; set; } = "";
     }
-
 }

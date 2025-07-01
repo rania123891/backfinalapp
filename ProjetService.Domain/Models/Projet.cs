@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ProjetService.Domain.Models.ProjetService.Domain.Models;
 
 namespace ProjetService.Domain.Models
 {
@@ -32,8 +33,7 @@ namespace ProjetService.Domain.Models
         public int CreateurId { get; set; } // ID de l'utilisateur qui a créé le projet
 
         // ✅ Relation avec les entités liées (nullable)
-        public ICollection<Equipe>? Equipes { get; set; }
-        public ICollection<Tache>? Taches { get; set; }
+        public ICollection<ProjetEquipe> ProjetsEquipes { get; set; }
         public virtual ICollection<Planification> Planifications { get; set; }
 
     }

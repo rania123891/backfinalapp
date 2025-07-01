@@ -16,5 +16,9 @@ namespace ProjetService.Domain.Interface
         Task<Planification> UpdateStatusAsync(int id, EtatListe nouveauStatut);
         Task<Planification> CreateWithIncludesAsync(Planification planification);
         Task<Planification> UpdateWithIncludesAsync(Planification planification);
+        Task<IEnumerable<Planification>> GetByUserIdAsync(int userId);
+        Task<IEnumerable<Planification>> GetByUserIdAndDateAsync(int userId, DateTime date);
+        Task<IEnumerable<Planification>> GetAllByUserIdWithIncludesAsync(int userId);
+       
     }
 }

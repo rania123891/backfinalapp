@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjetService.Domain.Models;
+using ProjetService.Domain.Models.ProjetService.Domain.Models;
 
 namespace ProjetService.Data.Context
 {
@@ -68,18 +69,29 @@ namespace ProjetService.Data.Context
                 entity.HasIndex(e => new { e.Date, e.HeureDebut })
                     .HasDatabaseName("IX_Planifications_Date_HeureDebut");
             });
-
-            // ✅ Configuration Projet
             modelBuilder.Entity<Projet>(entity =>
             {
                 entity.Property(p => p.CreateurId).IsRequired();
-
-                // Relation Projet → Equipes
-                entity.HasMany(p => p.Equipes)
-                    .WithOne(e => e.Projet)
-                    .HasForeignKey(e => e.ProjetId)
-                    .OnDelete(DeleteBehavior.Cascade);
             });
+
+            modelBuilder.Entity<ProjetEquipe>()
+    .HasKey(pe => new { pe.ProjetId, pe.EquipeId });
+
+            modelBuilder.Entity<ProjetEquipe>()
+                .HasOne(pe => pe.Projet)
+                .WithMany(p => p.ProjetsEquipes)
+                .HasForeignKey(pe => pe.ProjetId);
+
+            modelBuilder.Entity<ProjetEquipe>()
+                .HasOne(pe => pe.Equipe)
+                .WithMany(e => e.ProjetsEquipes)
+                .HasForeignKey(pe => pe.EquipeId);
+
+            modelBuilder.Entity<Tache>()
+    .HasOne(t => t.Equipe)
+    .WithMany(e => e.Taches)
+    .HasForeignKey(t => t.EquipeId)
+    .OnDelete(DeleteBehavior.Restrict); // ou Cascade, selon ton besoin
 
             // ✅ Configuration Tache
             modelBuilder.Entity<Tache>(entity =>

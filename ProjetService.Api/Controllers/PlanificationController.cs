@@ -17,6 +17,31 @@ namespace ProjetService.Api.Controllers
             _planificationRepository = planificationRepository;
         }
 
+        /// <summary>
+        /// Récupérer les planifications d'un utilisateur
+        /// </summary>
+        [HttpGet("user/{userId}")]
+        public async Task<ActionResult<IEnumerable<Planification>>> GetPlanificationsByUser(int userId)
+        {
+            var planifications = await _planificationRepository.GetByUserIdAsync(userId);
+            return Ok(planifications);
+        }
+
+        /// <summary>
+        /// Récupérer les planifications d'un utilisateur pour une date
+        /// </summary>
+        [HttpGet("user/{userId}/date/{dateStr}")]
+        public async Task<ActionResult<IEnumerable<Planification>>> GetPlanificationsByUserAndDate(int userId, string dateStr)
+        {
+            if (!DateTime.TryParse(dateStr, out DateTime date))
+            {
+                return BadRequest("Format de date invalide");
+            }
+
+            var planifications = await _planificationRepository.GetByUserIdAndDateAsync(userId, date);
+            return Ok(planifications);
+        }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Planification>>> GetPlanifications()
         {
@@ -63,7 +88,8 @@ namespace ProjetService.Api.Controllers
                     Description = dto.Description,
                     TacheId = dto.TacheId,
                     ProjetId = dto.ProjetId,
-                    ListeId = dto.ListeId
+                    ListeId = dto.ListeId,
+                    UserId = dto.UserId // Utiliser directement l'UserId du DTO
                 };
 
                 var created = await _planificationRepository.CreateWithIncludesAsync(planification);

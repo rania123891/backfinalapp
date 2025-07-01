@@ -16,3 +16,4 @@ C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Data\obj\Debug\net8.0\
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Data\obj\Debug\net8.0\MessageService.Data.pdb
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Data\obj\Debug\net8.0\MessageService.Data.genruntimeconfig.cache
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Data\obj\Debug\net8.0\ref\MessageService.Data.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\MessageService.Data\bin\Debug\net8.0\MessageService.Domain.staticwebassets.endpoints.json

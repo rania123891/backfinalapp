@@ -172,6 +172,27 @@
   },
   {
     "ContainingType": "ProjetService.Api.Controllers.EquipeController",
+    "Method": "AffecterProjet",
+    "RelativePath": "api/equipes/{equipeId}/affecter-projet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "projetId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.EquipeController",
     "Method": "GetMembresByEquipe",
     "RelativePath": "api/equipes/{equipeId}/membres",
     "HttpMethod": "GET",
@@ -232,6 +253,22 @@
       },
       {
         "Name": "membreEquipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.EquipeController",
+    "Method": "GetProjetsDeLEquipe",
+    "RelativePath": "api/equipes/{equipeId}/projets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipeId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -674,6 +711,63 @@
     ]
   },
   {
+    "ContainingType": "ProjetService.Api.Controllers.PlanificationController",
+    "Method": "GetPlanificationsByUser",
+    "RelativePath": "api/planifications/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.Planification, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.PlanificationController",
+    "Method": "GetPlanificationsByUserAndDate",
+    "RelativePath": "api/planifications/user/{userId}/date/{dateStr}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dateStr",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.Planification, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ProjetService.Api.Controllers.GenericController\u00601[[ProjetService.Domain.Models.Projet, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "GetAll",
     "RelativePath": "api/projets",
@@ -780,6 +874,42 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.ProjetController",
+    "Method": "GetEquipesDuProjet",
+    "RelativePath": "api/projets/{id}/equipes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetService.Domain.Models.Equipe, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.StatistiquesController",
+    "Method": "GetStatistiques",
+    "RelativePath": "api/statistiques",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -893,12 +1023,60 @@
   },
   {
     "ContainingType": "ProjetService.Api.Controllers.TacheController",
+    "Method": "GetAllTachesWithEquipes",
+    "RelativePath": "api/taches/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.TacheController",
+    "Method": "CreateTache",
+    "RelativePath": "api/taches/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ProjetService.Domain.DTO.TacheCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.TacheController",
+    "Method": "GetTachesByEquipe",
+    "RelativePath": "api/taches/equipe/{equipeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetService.Api.Controllers.TacheController",
     "Method": "GetTachesPourGantt",
     "RelativePath": "api/taches/gantt",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "projetId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[ProjetService.Domain.DTO.TacheGanttDto, ProjetService.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
