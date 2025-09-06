@@ -12,6 +12,7 @@ namespace ProjetService.Data.Context
         public DbSet<MembreEquipe> MembresEquipe { get; set; }
         public DbSet<Commentaire> Commentaires { get; set; }
         public DbSet<Planification> Planifications { get; set; }
+        public DbSet<SaisieTemps> SaisiesTemps { get; set; }
 
         public ProjetDbContext(DbContextOptions<ProjetDbContext> options) : base(options) { }
 
@@ -119,6 +120,56 @@ namespace ProjetService.Data.Context
             modelBuilder.Entity<Commentaire>(entity =>
             {
                 entity.Property(c => c.UtilisateurId).IsRequired();
+            });
+
+            // ✅ Configuration SaisieTemps
+            modelBuilder.Entity<SaisieTemps>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+
+                entity.Property(e => e.UtilisateurId)
+                    .IsRequired();
+
+                entity.Property(e => e.ProjetId)
+                    .IsRequired();
+
+                entity.Property(e => e.DateTravail)
+                    .IsRequired();
+
+                entity.Property(e => e.HeureDebut)
+                    .IsRequired();
+
+                entity.Property(e => e.HeureFin)
+                    .IsRequired();
+
+                entity.Property(e => e.DureeHeures)
+                    .HasColumnType("decimal(5,2)")
+                    .IsRequired();
+
+                entity.Property(e => e.Description)
+                    .HasMaxLength(1000);
+
+                entity.Property(e => e.CreatedAt)
+                    .IsRequired()
+                    .HasDefaultValueSql("GETDATE()");
+
+                // Relations
+                entity.HasOne<Projet>()
+                    .WithMany()
+                    .HasForeignKey(e => e.ProjetId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne<Tache>()
+                    .WithMany()
+                    .HasForeignKey(e => e.TacheId)
+                    .OnDelete(DeleteBehavior.SetNull);
+
+                // Index pour améliorer les performances
+                entity.HasIndex(e => new { e.UtilisateurId, e.DateTravail })
+                    .HasDatabaseName("IX_SaisiesTemps_UtilisateurId_DateTravail");
+
+                entity.HasIndex(e => new { e.ProjetId, e.DateTravail })
+                    .HasDatabaseName("IX_SaisiesTemps_ProjetId_DateTravail");
             });
         }
     }

@@ -11,6 +11,7 @@ using UserService.Infra.Services;
 using UserService.Api.Filters;
 using UserService.Api.Controllers;
 using UserService.Domain.Interfaces.Infrastructure;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +34,7 @@ builder.Services.AddDbContext<UserDbContext>(options =>
 
 // Enregistrer les dépendances
 builder.Services.AddScoped<IUtilisateurRepository, UtilisateurRepository>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 // Enregistrer MediatR
@@ -88,13 +90,14 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAngularApp",
         policy => policy
             .WithOrigins(
-                "http://localhost:4200", // Angular dev server
-                "http://localhost:4000"  // Production si nécessaire
+                "http://localhost:4200",    // Angular dev server
+                "http://localhost:3000",    // React dev server
+                "https://localhost:7155"    // Swagger HTTPS
             )
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials()
-            .WithExposedHeaders("Authorization")
+            .WithExposedHeaders("Authorization", "Content-Type")
     );
 });
 
@@ -144,39 +147,33 @@ builder.Services.AddSwaggerGen(c =>
             new string[] {}
         }
     });
+
 });
 
 var app = builder.Build();
-
-// Middleware de logging des requêtes
-app.Use(async (context, next) =>
-{
-    logger.LogInformation($"📝 Requête entrante: {context.Request.Method} {context.Request.Path}");
-    var authHeader = context.Request.Headers["Authorization"].ToString();
-    if (!string.IsNullOrEmpty(authHeader))
-    {
-        logger.LogInformation("🔑 Token présent dans la requête");
-    }
-
-    await next();
-
-    logger.LogInformation($"📤 Réponse: {context.Response.StatusCode}");
-});
-
-// Configuration de l'environnement
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    logger.LogInformation("🔧 Mode développement activé");
+    logger.LogInformation("�� Mode développement activé");
 }
-
-// Configuration du pipeline HTTP
 app.UseRouting();
 
 // CORS doit être entre UseRouting et UseAuthentication
 app.UseCors("AllowAngularApp");
 logger.LogInformation("🌐 CORS configuré");
+
+// Middleware de logging simple
+app.Use(async (context, next) =>
+{
+    logger.LogInformation($"📝 {context.Request.Method} {context.Request.Path}");
+    await next();
+    logger.LogInformation($"📤 Réponse: {context.Response.StatusCode}");
+});
+
+// Configuration du pipeline HTTP
+
+
 
 // Fichiers statiques pour les images
 app.UseStaticFiles();

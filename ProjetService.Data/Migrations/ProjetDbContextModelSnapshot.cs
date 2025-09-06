@@ -205,6 +205,58 @@ namespace ProjetService.Data.Migrations
                     b.ToTable("ProjetEquipe");
                 });
 
+            modelBuilder.Entity("ProjetService.Domain.Models.SaisieTemps", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<DateTime>("DateTravail")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<decimal>("DureeHeures")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<TimeSpan>("HeureDebut")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("HeureFin")
+                        .HasColumnType("time");
+
+                    b.Property<int>("ProjetId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TacheId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UtilisateurId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TacheId");
+
+                    b.HasIndex("ProjetId", "DateTravail")
+                        .HasDatabaseName("IX_SaisiesTemps_ProjetId_DateTravail");
+
+                    b.HasIndex("UtilisateurId", "DateTravail")
+                        .HasDatabaseName("IX_SaisiesTemps_UtilisateurId_DateTravail");
+
+                    b.ToTable("SaisiesTemps");
+                });
+
             modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>
                 {
                     b.Property<int>("Id")
@@ -288,6 +340,20 @@ namespace ProjetService.Data.Migrations
                     b.Navigation("Equipe");
 
                     b.Navigation("Projet");
+                });
+
+            modelBuilder.Entity("ProjetService.Domain.Models.SaisieTemps", b =>
+                {
+                    b.HasOne("ProjetService.Domain.Models.Projet", null)
+                        .WithMany()
+                        .HasForeignKey("ProjetId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ProjetService.Domain.Models.Tache", null)
+                        .WithMany()
+                        .HasForeignKey("TacheId")
+                        .OnDelete(DeleteBehavior.SetNull);
                 });
 
             modelBuilder.Entity("ProjetService.Domain.Models.Tache", b =>

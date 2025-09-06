@@ -13,6 +13,7 @@ namespace UserService.Data.Context
         public UserDbContext(DbContextOptions<UserDbContext> options) : base(options) { }
 
         public DbSet<Utilisateur> Utilisateurs { get; set; }
+        public DbSet<EmailVerification> EmailVerifications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -39,6 +40,19 @@ namespace UserService.Data.Context
                 // Ajoute un index sur l'email pour des recherches plus rapides
                 entity.HasIndex(e => e.Email)
                     .IsUnique();
+            });
+            // Configuration pour EmailVerification
+            modelBuilder.Entity<EmailVerification>(entity =>
+            {
+                entity.ToTable("EmailVerifications");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(255);
+                entity.Property(e => e.Token)
+                    .IsRequired();
+                entity.HasIndex(e => e.Email); // Index pour les recherches par email
+                entity.HasIndex(e => e.Token); // Index pour les recherches par token
             });
         }
     }

@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.IO;
 using System.Linq;
+using UserService.Domain.Models;
 
 namespace UserService.Api.Controllers
 {
@@ -51,32 +52,66 @@ namespace UserService.Api.Controllers
             _logger.LogInformation($"👑 Vérification admin - Role: {userRole}, Est admin: {isAdmin}");
             return isAdmin;
         }
-
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromForm] RegisterDto registerDto)
+public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
+{
+    _logger.LogInformation($"📝 Tentative d'inscription pour: {registerDto.Email}");
+
+    try
+    {
+        // 1. Création de l'utilisateur
+        var command = new CreateUtilisateurCommand(
+            registerDto.Email,
+            registerDto.Password,
+            registerDto.Role,
+            registerDto.Nom,
+            registerDto.Prenom
+        );
+
+        var utilisateur = await _mediator.Send(command);
+
+        // Inscription simple sans vérification d'email
+
+        _logger.LogInformation($"✅ Inscription réussie pour: {registerDto.Email}");
+
+        return Ok(new
         {
-            _logger.LogInformation($"📝 Tentative d'inscription pour: {registerDto.Email}");
+            message = "Inscription réussie ! Vous pouvez maintenant vous connecter.",
+            success = true
+        });
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError($"❌ Échec de l'inscription pour {registerDto.Email}: {ex.Message}");
+        return BadRequest(ex.Message);
+    }
+}
 
-            try
-            {
-                var command = new CreateUtilisateurCommand(
-                    registerDto.Email,
-                    registerDto.Password,
-                    registerDto.Role,
-                    registerDto.Nom,
-                    registerDto.Prenom
-                );
+        /*  [HttpPost("register")]
+           public async Task<IActionResult> Register([FromForm] RegisterDto registerDto)
+           {
+               _logger.LogInformation($"📝 Tentative d'inscription pour: {registerDto.Email}");
 
-                var utilisateur = await _mediator.Send(command);
-                _logger.LogInformation($"✅ Inscription réussie pour: {registerDto.Email}");
-                return Ok("Inscription réussie.");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"❌ Échec de l'inscription pour {registerDto.Email}: {ex.Message}");
-                return BadRequest(ex.Message);
-            }
-        }
+               try
+               {
+                   var command = new CreateUtilisateurCommand(
+                       registerDto.Email,
+                       registerDto.Password,
+                       registerDto.Role,
+                       registerDto.Nom,
+                       registerDto.Prenom
+                   );
+
+                   var utilisateur = await _mediator.Send(command);
+                   _logger.LogInformation($"✅ Inscription réussie pour: {registerDto.Email}");
+                   return Ok("Inscription réussie.");
+               }
+               catch (Exception ex)
+               {
+                   _logger.LogError($"❌ Échec de l'inscription pour {registerDto.Email}: {ex.Message}");
+                   return BadRequest(ex.Message);
+               }
+           }*/
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginDto loginDto)
@@ -468,5 +503,6 @@ namespace UserService.Api.Controllers
                 return StatusCode(500, $"Erreur lors de la récupération de l'image: {ex.Message}");
             }
         }
+
     }
 }

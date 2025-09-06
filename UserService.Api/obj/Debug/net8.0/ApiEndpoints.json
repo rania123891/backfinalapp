@@ -138,34 +138,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ConfirmPassword",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Nom",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Prenom",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Role",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "registerDto",
+        "Type": "UserService.Domain.DTOs.RegisterDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -828,6 +828,207 @@
         }
       }
     },
+    "/api/FicheHeures/rapport": {
+      "get": {
+        "tags": [
+          "FicheHeures"
+        ],
+        "parameters": [
+          {
+            "name": "ProjetId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "UtilisateurId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "DateDebut",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "DateFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FicheHeureResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FicheHeureResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FicheHeureResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/FicheHeures/pdf": {
+      "get": {
+        "tags": [
+          "FicheHeures"
+        ],
+        "parameters": [
+          {
+            "name": "ProjetId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "UtilisateurId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "DateDebut",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "DateFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FicheHeures/csv": {
+      "get": {
+        "tags": [
+          "FicheHeures"
+        ],
+        "parameters": [
+          {
+            "name": "ProjetId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "UtilisateurId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "DateDebut",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "DateFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/FicheHeures/excel": {
+      "get": {
+        "tags": [
+          "FicheHeures"
+        ],
+        "parameters": [
+          {
+            "name": "ProjetId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "UtilisateurId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "DateDebut",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "DateFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/membres": {
       "get": {
         "tags": [
@@ -1606,6 +1807,395 @@
         }
       }
     },
+    "/api/SaisieTemps/{id}": {
+      "get": {
+        "tags": [
+          "SaisieTemps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SaisieTempsDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SaisieTempsDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SaisieTempsDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SaisieTemps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSaisieTempsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSaisieTempsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSaisieTempsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SaisieTemps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "utilisateurId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SaisieTemps/utilisateur/{utilisateurId}": {
+      "get": {
+        "tags": [
+          "SaisieTemps"
+        ],
+        "parameters": [
+          {
+            "name": "utilisateurId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "dateDebut",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "dateFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SaisieTemps/projet/{projetId}": {
+      "get": {
+        "tags": [
+          "SaisieTemps"
+        ],
+        "parameters": [
+          {
+            "name": "projetId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "dateDebut",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "dateFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SaisieTemps/tache/{tacheId}": {
+      "get": {
+        "tags": [
+          "SaisieTemps"
+        ],
+        "parameters": [
+          {
+            "name": "tacheId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "dateDebut",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "dateFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SaisieTempsDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SaisieTemps": {
+      "post": {
+        "tags": [
+          "SaisieTemps"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSaisieTempsDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSaisieTempsDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSaisieTempsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/statistiques": {
       "get": {
         "tags": [
@@ -2009,6 +2599,55 @@
         },
         "additionalProperties": false
       },
+      "CreateSaisieTempsDto": {
+        "required": [
+          "dateTravail",
+          "heureDebut",
+          "heureFin",
+          "projetId",
+          "utilisateurId"
+        ],
+        "type": "object",
+        "properties": {
+          "utilisateurId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projetId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tacheId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dateTravail": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "heureDebut": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "heureFin": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "dureeHeures": {
+            "maximum": 24,
+            "minimum": 0,1,
+            "type": "number",
+            "format": "double"
+          },
+          "description": {
+            "maxLength": 1000,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ETAResult": {
         "type": "object",
         "properties": {
@@ -2109,6 +2748,55 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "FicheHeureResult": {
+        "type": "object",
+        "properties": {
+          "projetId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomProjet": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateDebut": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateFin": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "saisiesTemps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SaisieTempsDto"
+            },
+            "nullable": true
+          },
+          "totalHeures": {
+            "type": "number",
+            "format": "double"
+          },
+          "heuresParUtilisateur": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "format": "double"
+            },
+            "nullable": true
+          },
+          "heuresParTache": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "format": "double"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "MembreEquipe": {
         "type": "object",
@@ -2319,6 +3007,65 @@
         "type": "integer",
         "format": "int32"
       },
+      "SaisieTempsDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "utilisateurId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projetId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tacheId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dateTravail": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "heureDebut": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "heureFin": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "dureeHeures": {
+            "type": "number",
+            "format": "double"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "nomProjet": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomTache": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomUtilisateur": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "StatutEquipe": {
         "enum": [
           0,
@@ -2431,6 +3178,50 @@
         "properties": {
           "listeId": {
             "$ref": "#/components/schemas/EtatListe"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateSaisieTempsDto": {
+        "required": [
+          "dateTravail",
+          "heureDebut",
+          "heureFin",
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tacheId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dateTravail": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "heureDebut": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "heureFin": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "dureeHeures": {
+            "maximum": 24,
+            "minimum": 0,1,
+            "type": "number",
+            "format": "double"
+          },
+          "description": {
+            "maxLength": 1000,
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

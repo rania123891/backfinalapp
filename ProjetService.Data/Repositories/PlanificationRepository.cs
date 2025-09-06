@@ -97,6 +97,25 @@ namespace ProjetService.Data.Repositories
                 .ThenBy(p => p.HeureDebut)
                 .ToListAsync();
         }
-      
+        public async Task<IEnumerable<Planification>> GetByProjetIdWithIncludesAsync(int projetId, DateTime? dateDebut = null, DateTime? dateFin = null)
+        {
+            var query = _context.Planifications
+                .Include(p => p.Tache)          // ✅ Inclure Tache
+                .Include(p => p.Projet)         // ✅ Inclure Projet
+                                                // ❌ PAS d'Include User car c'est un microservice séparé
+                .Where(p => p.ProjetId == projetId);
+
+            if (dateDebut.HasValue)
+                query = query.Where(p => p.Date >= dateDebut.Value);
+
+            if (dateFin.HasValue)
+                query = query.Where(p => p.Date <= dateFin.Value);
+
+            return await query
+                .OrderBy(p => p.Date)
+                .ThenBy(p => p.HeureDebut)
+                .ToListAsync();
+        }
+
     }
 }

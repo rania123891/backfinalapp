@@ -189,4 +189,7 @@ C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\User
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\UserService.Api.genruntimeconfig.cache
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\ref\UserService.Api.dll
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\bin\Debug\net8.0\UserService.Api.staticwebassets.runtime.json
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\bin\Debug\net8.0\SendGrid.dll
+C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\bin\Debug\net8.0\StarkbankEcdsa.dll
 C:\Users\hp\Desktop\pfe back final\PFW\PFW\UserService.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

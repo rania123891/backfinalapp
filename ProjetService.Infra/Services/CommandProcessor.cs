@@ -19,10 +19,23 @@ namespace ProjetService.Infra.Services
     public class CommandProcessor : ICommandProcessor
     {
         private readonly IMediator _mediator;
+        private readonly IPlanificationRepository _planificationRepository;
+        private readonly IGenericRepository<Tache> _tacheRepository;
+        private readonly IGenericRepository<Projet> _projetRepository;
+        private readonly IGenericRepository<Equipe> _equipeRepository;
 
-        public CommandProcessor(IMediator mediator)
+        public CommandProcessor(
+            IMediator mediator, 
+            IPlanificationRepository planificationRepository,
+            IGenericRepository<Tache> tacheRepository,
+            IGenericRepository<Projet> projetRepository,
+            IGenericRepository<Equipe> equipeRepository)
         {
             _mediator = mediator;
+            _planificationRepository = planificationRepository;
+            _tacheRepository = tacheRepository;
+            _projetRepository = projetRepository;
+            _equipeRepository = equipeRepository;
         }
 
         public async Task<CommandResult> ProcessAsync(string command)
@@ -579,13 +592,120 @@ namespace ProjetService.Infra.Services
 
         private async Task<CommandResult> ProcessPlanificationCommand(string command, CommandAnalysis analysis)
         {
-            return new CommandResult
+            try
             {
-                Success = false,
-                Message = "🔄 Les commandes de planification sont traitées côté frontend pour une meilleure intelligence.",
-                Type = CommandType.Planification,
-                Confidence = analysis.Confidence
-            };
+                // 🎯 Extraire les informations de planification
+                var (tacheNom, projetNom, heureDebut, heureFin, description, date) = ExtractPlanificationData(command);
+                
+                if (string.IsNullOrEmpty(tacheNom))
+                {
+                    return new CommandResult
+                    {
+                        Success = false,
+                        Message = "❌ Je n'ai pas pu identifier la tâche. Essayez: 'J'ai travaillé sur Créer page d'accueil du projet Site Web E-commerce de 9h à 11h30'",
+                        Type = CommandType.Planification,
+                        Confidence = analysis.Confidence
+                    };
+                }
+
+                // 🔍 Chercher la tâche et le projet par nom
+                var tache = await FindTacheByName(tacheNom);
+                if (tache == null)
+                {
+                    return new CommandResult
+                    {
+                        Success = false,
+                        Message = $"❌ Tâche '{tacheNom}' non trouvée. Créez d'abord la tâche.",
+                        Type = CommandType.Planification,
+                        Confidence = analysis.Confidence
+                    };
+                }
+
+                var projet = await FindProjetByName(projetNom);
+                if (projet == null)
+                {
+                    return new CommandResult
+                    {
+                        Success = false,
+                        Message = $"❌ Projet '{projetNom}' non trouvé. Créez d'abord le projet.",
+                        Type = CommandType.Planification,
+                        Confidence = analysis.Confidence
+                    };
+                }
+
+                // ✅ Créer la planification
+                var planification = new Planification
+                {
+                    Date = date ?? DateTime.Today,
+                    HeureDebut = heureDebut,
+                    HeureFin = heureFin,
+                    Description = description ?? $"Travail sur {tacheNom}",
+                    TacheId = tache.Id,
+                    ProjetId = projet.Id,
+                    ListeId = EtatListe.EnCours,
+                    UserId = 1 // TODO: Récupérer l'ID de l'utilisateur connecté
+                };
+
+                // 💾 VRAIE SAUVEGARDE dans la base de données
+                try
+                {
+                    // ✅ SAUVEGARDER RÉELLEMENT dans la base de données
+                    var planificationSauvegardee = await _planificationRepository.CreateWithIncludesAsync(planification);
+                    
+                    return new CommandResult
+                    {
+                        Success = true,
+                        Message = $"✅ Planification créée et SAUVEGARDÉE en base ! {tacheNom} pour {projetNom} de {heureDebut:hh\\:mm} à {heureFin:hh\\:mm}\n\n📝 Description: {description ?? $"Travail sur {tacheNom}"}\n📅 Date: {date?.ToString("dd/MM/yyyy") ?? DateTime.Today.ToString("dd/MM/yyyy")}\n💾 ID: {planificationSauvegardee.Id}",
+                        Type = CommandType.Planification,
+                        Confidence = analysis.Confidence,
+                        ExtractedData = new Dictionary<string, object>
+                        {
+                            ["tache"] = tacheNom,
+                            ["projet"] = projetNom,
+                            ["debut"] = heureDebut,
+                            ["fin"] = heureFin,
+                            ["description"] = description,
+                            ["planification"] = planificationSauvegardee
+                        }
+                    };
+                }
+                catch (Exception ex)
+                {
+                    return new CommandResult
+                    {
+                        Success = false,
+                        Message = $"❌ Erreur lors de la sauvegarde en base: {ex.Message}",
+                        Type = CommandType.Planification,
+                        Confidence = analysis.Confidence
+                    };
+                }
+
+                return new CommandResult
+                {
+                    Success = true,
+                    Message = $"✅ Planification créée ! {tacheNom} pour {projetNom} de {heureDebut:hh\\:mm} à {heureFin:hh\\:mm}",
+                    Type = CommandType.Planification,
+                    Confidence = analysis.Confidence,
+                    ExtractedData = new Dictionary<string, object>
+                    {
+                        ["tache"] = tacheNom,
+                        ["projet"] = projetNom,
+                        ["debut"] = heureDebut,
+                        ["fin"] = heureFin,
+                        ["description"] = description
+                    }
+                };
+            }
+            catch (Exception ex)
+            {
+                return new CommandResult
+                {
+                    Success = false,
+                    Message = $"❌ Erreur lors de la création de la planification: {ex.Message}",
+                    Type = CommandType.Planification,
+                    Confidence = analysis.Confidence
+                };
+            }
         }
 
         // 🛠️ MÉTHODES UTILITAIRES
@@ -652,16 +772,28 @@ namespace ProjetService.Infra.Services
         {
             if (string.IsNullOrEmpty(equipeNom)) return null;
 
-            // Mapping simple - à adapter selon vos vraies équipes en base
-            return equipeNom.ToLower() switch
+            try
             {
-                "frontend" => 1,
-                "backend" => 2,
-                "mobile" => 3,
-                "devops" => 4,
-                "qa" => 5,
-                _ => null
-            };
+                // ✅ REQUÊTE DIRECTE à la base de données
+                var equipes = await _equipeRepository.GetAllAsync();
+                var equipe = equipes.FirstOrDefault(e => 
+                    e.Nom.ToLower().Contains(equipeNom.ToLower())
+                );
+                
+                if (equipe != null)
+                {
+                    Console.WriteLine($"DEBUG: Équipe trouvée = '{equipe.Nom}' (ID: {equipe.IdEquipe})");
+                    return equipe.IdEquipe;
+                }
+                
+                Console.WriteLine($"DEBUG: Aucune équipe trouvée pour '{equipeNom}'");
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"DEBUG: Erreur recherche équipe: {ex.Message}");
+                return null;
+            }
         }
 
         private string GetHelpMessage()
@@ -685,8 +817,200 @@ namespace ProjetService.Infra.Services
 • 'Nouveau membre Marie pour l'équipe Frontend'
 
 ⏰ **PLANIFICATION**
-• 'J'ai travaillé sur le projet X pour la tâche Y de 8h à 9h'";
+• 'J'ai travaillé sur Créer page d'accueil du projet Site Web E-commerce de 9h à 11h30'";
         }
+
+        // 🎯 MÉTHODES POUR LA PLANIFICATION
+        private (string tacheNom, string projetNom, TimeSpan heureDebut, TimeSpan heureFin, string description, DateTime? date) ExtractPlanificationData(string command)
+        {
+            var commandLower = command.ToLower();
+            var originalCommand = command; // ✅ Garder l'original pour la casse
+            
+            // ✅ SOLUTION : Extraire avec l'original pour garder la casse
+            var tacheNom = ExtractTacheFromPlanification(originalCommand);
+            var projetNom = ExtractProjetFromPlanification(originalCommand);
+            
+            // Extraire les heures (format: "de 9h à 11h30")
+            var heureDebut = ExtractHeure(commandLower, "de ");
+            var heureFin = ExtractHeure(commandLower, "à ");
+            
+            // Extraire la description
+            var description = $"Travail sur {tacheNom}";
+            
+            // Date par défaut: aujourd'hui
+            var date = DateTime.Today;
+            
+            return (tacheNom, projetNom, heureDebut, heureFin, description, date);
+        }
+
+        private string ExtractTacheFromPlanification(string command)
+        {
+            Console.WriteLine($"DEBUG EXTRACTION: Commande reçue = '{command}'");
+            
+            // ✅ PATTERNS CORRIGÉS pour s'arrêter avant "du projet"
+            var patterns = new[]
+            {
+                @"sur\s+(.+?)\s+du projet", // "sur documentation utilisateur du projet"
+                @"sur\s+(.+?)\s+pour", // "sur documentation utilisateur pour"
+                @"sur\s+(.+?)\s+dans", // "sur documentation utilisateur dans"
+                @"sur\s+(.+?)\s+de\s+\d", // "sur documentation utilisateur de 08h"
+                @"sur\s+(.+?)$", // "sur documentation utilisateur" (fin de phrase)
+            };
+
+            foreach (var pattern in patterns)
+            {
+                var match = Regex.Match(command, pattern, RegexOptions.IgnoreCase);
+                if (match.Success)
+                {
+                    var result = match.Groups[1].Value.Trim();
+                    Console.WriteLine($"DEBUG EXTRACTION: Pattern '{pattern}' a trouvé = '{result}'");
+                    return result;
+                }
+                else
+                {
+                    Console.WriteLine($"DEBUG EXTRACTION: Pattern '{pattern}' n'a rien trouvé");
+                }
+            }
+            
+            Console.WriteLine("DEBUG EXTRACTION: Aucune tâche extraite");
+            return null;
+        }
+
+        private string ExtractProjetFromPlanification(string command)
+        {
+            // Patterns pour extraire le projet
+            var patterns = new[]
+            {
+                @"projet\s+(.+?)\s+de\s+\d", // "projet Site Web E-commerce de 14h"
+                @"du\s+projet\s+(.+?)\s+de\s+\d", // "du projet Site Web E-commerce de 14h"
+                @"projet\s+(.+?)$", // "projet Site Web E-commerce" (fin)
+                @"du\s+projet\s+(.+?)$", // "du projet Site Web E-commerce" (fin)
+            };
+
+            foreach (var pattern in patterns)
+            {
+                var match = Regex.Match(command, pattern, RegexOptions.IgnoreCase);
+                if (match.Success)
+                {
+                    return match.Groups[1].Value.Trim();
+                }
+            }
+            
+            return null;
+        }
+
+        private TimeSpan ExtractHeure(string text, string prefix)
+        {
+            var index = text.IndexOf(prefix);
+            if (index < 0) return TimeSpan.Zero;
+            
+            var afterPrefix = text.Substring(index + prefix.Length);
+            
+            // Chercher le pattern d'heure : "10h", "12h", "9h30", etc.
+            var heurePattern = @"(\d{1,2})h(\d{2})?";
+            var match = Regex.Match(afterPrefix, heurePattern);
+            
+            if (match.Success)
+            {
+                var heures = int.Parse(match.Groups[1].Value);
+                var minutes = match.Groups[2].Success ? int.Parse(match.Groups[2].Value) : 0;
+                
+                Console.WriteLine($"DEBUG: Heure extraite avec '{prefix}' -> {heures}:{minutes:D2}");
+                return new TimeSpan(heures, minutes, 0);
+            }
+            
+            Console.WriteLine($"DEBUG: Aucune heure trouvée avec '{prefix}' dans '{afterPrefix}'");
+            return TimeSpan.Zero;
+        }
+
+        private async Task<Tache> FindTacheByName(string nom)
+        {
+            if (string.IsNullOrEmpty(nom)) return null;
+            
+            var nomLower = nom.ToLower().Trim();
+            Console.WriteLine($"DEBUG: Recherche de tâche pour '{nomLower}'");
+            
+            try
+            {
+                // ✅ RÉCUPÉRER TOUTES LES TÂCHES DE LA BASE
+                var taches = await _tacheRepository.GetAllAsync();
+                Console.WriteLine($"DEBUG: {taches.Count()} tâches récupérées de la base");
+                
+                // ✅ Recherche exacte d'abord (insensible à la casse)
+                var tacheExacte = taches.FirstOrDefault(t => 
+                    t.Titre.ToLower().Trim() == nomLower);
+                
+                if (tacheExacte != null)
+                {
+                    Console.WriteLine($"DEBUG: Tâche trouvée (exacte) = '{tacheExacte.Titre}' (ID: {tacheExacte.Id})");
+                    return tacheExacte;
+                }
+                
+                // ✅ Recherche partielle si pas trouvé
+                var tachePartielle = taches.FirstOrDefault(t => 
+                    t.Titre.ToLower().Contains(nomLower) || 
+                    nomLower.Contains(t.Titre.ToLower()));
+                
+                if (tachePartielle != null)
+                {
+                    Console.WriteLine($"DEBUG: Tâche trouvée (partielle) = '{tachePartielle.Titre}' (ID: {tachePartielle.Id})");
+                    return tachePartielle;
+                }
+                
+                Console.WriteLine($"DEBUG: Aucune tâche trouvée pour '{nomLower}'");
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"DEBUG: Erreur lors de la recherche de tâche: {ex.Message}");
+                return null;
+            }
+        }
+
+        private async Task<Projet> FindProjetByName(string nom)
+        {
+            if (string.IsNullOrEmpty(nom)) return null;
+            
+            var nomLower = nom.ToLower().Trim();
+            Console.WriteLine($"DEBUG: Recherche de projet pour '{nomLower}'");
+            
+            try
+            {
+                // ✅ RÉCUPÉRER TOUS LES PROJETS DE LA BASE
+                var projets = await _projetRepository.GetAllAsync();
+                Console.WriteLine($"DEBUG: {projets.Count()} projets récupérés de la base");
+                
+                // ✅ Recherche exacte d'abord (insensible à la casse)
+                var projetExact = projets.FirstOrDefault(p => 
+                    p.Nom.ToLower().Trim() == nomLower);
+                
+                if (projetExact != null)
+                {
+                    Console.WriteLine($"DEBUG: Projet trouvé (exact) = '{projetExact.Nom}' (ID: {projetExact.Id})");
+                    return projetExact;
+                }
+                
+                // ✅ Recherche partielle si pas trouvé
+                var projetPartiel = projets.FirstOrDefault(p => 
+                    p.Nom.ToLower().Contains(nomLower) || 
+                    nomLower.Contains(p.Nom.ToLower()));
+                
+                if (projetPartiel != null)
+                {
+                    Console.WriteLine($"DEBUG: Projet trouvé (partiel) = '{projetPartiel.Nom}' (ID: {projetPartiel.Id})");
+                    return projetPartiel;
+                }
+                
+                Console.WriteLine($"DEBUG: Aucun projet trouvé pour '{nomLower}'");
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"DEBUG: Erreur lors de la recherche de projet: {ex.Message}");
+                return null;
+            }
+        }
+
     }
 
     // Classe d'analyse des commandes

@@ -3,6 +3,182 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EF86F2-2BD1-47D7-AEB3-EE4692D50941}|UserService.Infra\\UserService.Infra.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.infra\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EF86F2-2BD1-47D7-AEB3-EE4692D50941}|UserService.Infra\\UserService.Infra.csproj|solutionrelative:userservice.infra\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31EF86F2-2BD1-47D7-AEB3-EE4692D50941}|UserService.Infra\\UserService.Infra.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.infra\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31EF86F2-2BD1-47D7-AEB3-EE4692D50941}|UserService.Infra\\UserService.Infra.csproj|solutionrelative:userservice.infra\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\queries\\getutilisateurquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\queries\\getutilisateurquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\handlers\\createutilisateurcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\handlers\\createutilisateurcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.api\\controllers\\localfilestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\controllers\\localfilestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.api\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\dtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\dtos\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\models\\emailverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\models\\emailverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\messageservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|solutionrelative:messageservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F534164-7FB7-4704-8E34-350C22136787}|ProjetService.Infra\\ProjetService.Infra.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.infra\\services\\commandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F534164-7FB7-4704-8E34-350C22136787}|ProjetService.Infra\\ProjetService.Infra.csproj|solutionrelative:projetservice.infra\\services\\commandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\interfaces\\infrastructure\\ifilestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\interfaces\\infrastructure\\ifilestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.api\\filters\\formfileschemafilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\filters\\formfileschemafilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\interfaces\\infrastructure\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\interfaces\\infrastructure\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4298761-697F-44BC-81E5-6288B1CF3091}|UserService.Data\\UserService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.data\\context\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4298761-697F-44BC-81E5-6288B1CF3091}|UserService.Data\\UserService.Data.csproj|solutionrelative:userservice.data\\context\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\interfaces\\infrastructure\\iemailverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\interfaces\\infrastructure\\iemailverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4298761-697F-44BC-81E5-6288B1CF3091}|UserService.Data\\UserService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.data\\repositories\\utilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4298761-697F-44BC-81E5-6288B1CF3091}|UserService.Data\\UserService.Data.csproj|solutionrelative:userservice.data\\repositories\\utilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\tache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\tache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\planification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\planification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\controllers\\ficheheurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\controllers\\ficheheurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\controllers\\planificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\controllers\\planificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\controllers\\saisietempscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\controllers\\saisietempscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\handlers\\saisietempshandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\handlers\\saisietempshandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\interface\\iplanificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\interface\\iplanificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\queries\\getficheheurequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\queries\\getficheheurequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.data\\repositories\\saisietempsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|solutionrelative:projetservice.data\\repositories\\saisietempsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\dto\\saisietempsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\dto\\saisietempsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.data\\context\\projetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|solutionrelative:projetservice.data\\context\\projetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\queries\\saisietempsqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\queries\\saisietempsqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\saisietemps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\saisietemps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\interface\\isaisietempsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\interface\\isaisietempsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\dto\\createplanificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\dto\\createplanificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\commands\\saisietempscommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\commands\\saisietempscommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\commands\\createprojetcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\commands\\createprojetcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.data\\repositories\\planificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|solutionrelative:projetservice.data\\repositories\\planificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\dto\\planificationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\dto\\planificationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\membreequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\membreequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\equipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\equipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\projetequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\projetequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\messageservice.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|solutionrelative:messageservice.api\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,10 +247,6 @@
       "RelativeMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|solutionrelative:messageservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\messageservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|solutionrelative:messageservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\messageservice.api\\messageservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0B534A7C-9615-42FC-A3CF-28456806E1FC}|MessageService.Api\\MessageService.Api.csproj|solutionrelative:messageservice.api\\messageservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -101,10 +273,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB024A79-15B8-453B-A48D-83FC48761B20}|MessageService.Domain\\MessageService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\messageservice.domain\\dtos\\messageattachmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB024A79-15B8-453B-A48D-83FC48761B20}|MessageService.Domain\\MessageService.Domain.csproj|solutionrelative:messageservice.domain\\dtos\\messageattachmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.api\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB024A79-15B8-453B-A48D-83FC48761B20}|MessageService.Domain\\MessageService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\messageservice.domain\\dtos\\createmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -139,26 +307,6 @@
       "RelativeMoniker": "D:0:0:{BB024A79-15B8-453B-A48D-83FC48761B20}|MessageService.Domain\\MessageService.Domain.csproj|solutionrelative:messageservice.domain\\commands\\createmessagecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F534164-7FB7-4704-8E34-350C22136787}|ProjetService.Infra\\ProjetService.Infra.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.infra\\services\\commandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F534164-7FB7-4704-8E34-350C22136787}|ProjetService.Infra\\ProjetService.Infra.csproj|solutionrelative:projetservice.infra\\services\\commandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\tache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\tache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\equipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\equipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\projet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\projet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -175,24 +323,12 @@
       "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\interface\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\commands\\createprojetcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\commands\\createprojetcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\projetequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\projetequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\controllers\\assistantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\controllers\\assistantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\commandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\commandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\handlers\\createutilisateurcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\handlers\\createutilisateurcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\handlers\\getutilisateurbyemailqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -207,28 +343,12 @@
       "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\handlers\\uploadprofilephotohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\interfaces\\infrastructure\\ifilestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\interfaces\\infrastructure\\ifilestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\queries\\getallutilisateursquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\queries\\getallutilisateursquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\queries\\getutilisateurquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\queries\\getutilisateurquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\queries\\getutilisateurbyemailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\queries\\getutilisateurbyemailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31EF86F2-2BD1-47D7-AEB3-EE4692D50941}|UserService.Infra\\UserService.Infra.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.infra\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31EF86F2-2BD1-47D7-AEB3-EE4692D50941}|UserService.Infra\\UserService.Infra.csproj|solutionrelative:userservice.infra\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4298761-697F-44BC-81E5-6288B1CF3091}|UserService.Data\\UserService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.data\\repositories\\utilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4298761-697F-44BC-81E5-6288B1CF3091}|UserService.Data\\UserService.Data.csproj|solutionrelative:userservice.data\\repositories\\utilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\commands\\uploadprofilephotocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -239,20 +359,8 @@
       "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\commands\\createutilisateurcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4298761-697F-44BC-81E5-6288B1CF3091}|UserService.Data\\UserService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.data\\context\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4298761-697F-44BC-81E5-6288B1CF3091}|UserService.Data\\UserService.Data.csproj|solutionrelative:userservice.data\\context\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\interfaces\\iutilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\interfaces\\iutilisateurrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\membreequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\membreequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\planification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\models\\planification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\models\\equipeutilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -273,10 +381,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\controllers\\genericcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\controllers\\genericcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.data\\context\\projetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|solutionrelative:projetservice.data\\context\\projetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\dto\\tachecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -303,48 +407,16 @@
       "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\controllers\\projetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\controllers\\planificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\controllers\\planificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\controllers\\etacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\controllers\\etacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\dto\\planificationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\dto\\planificationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.data\\repositories\\planificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0E14449-BCCA-4677-B8D5-7B3E15D215FC}|ProjetService.Data\\ProjetService.Data.csproj|solutionrelative:projetservice.data\\repositories\\planificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\dto\\createplanificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\dto\\createplanificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{440E8722-C5EE-443B-96B4-069794D26609}|ProjetService.Api\\ProjetService.Api.csproj|solutionrelative:projetservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\interface\\iplanificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|solutionrelative:projetservice.domain\\interface\\iplanificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{723F1DD5-8FBA-4E17-A6E5-8E18CB14F7F9}|ApGateway\\ApGateway.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\apgateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{723F1DD5-8FBA-4E17-A6E5-8E18CB14F7F9}|ApGateway\\ApGateway.csproj|solutionrelative:apgateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07007802-1424-4B14-845D-AE6B28DFED97}|UserService.Api\\UserService.Api.csproj|solutionrelative:userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\userservice.domain\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{023B7BDF-914C-4CDD-A373-29A12F57B830}|UserService.Domain\\UserService.Domain.csproj|solutionrelative:userservice.domain\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA9DE37B-621B-4069-A8D0-A3627DF04B50}|ProjetService.Domain\\ProjetService.Domain.csproj|c:\\users\\hp\\desktop\\pfe back final\\pfw\\pfw\\projetservice.domain\\handlers\\createtachecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -366,7 +438,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -377,650 +449,129 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\Message.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\Message.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\Message.cs",
-              "RelativeToolTip": "MessageService.Domain\\Models\\Message.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:57:20.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AttachmentsController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\AttachmentsController.cs",
-              "RelativeDocumentMoniker": "MessageService.Api\\Controllers\\AttachmentsController.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\AttachmentsController.cs",
-              "RelativeToolTip": "MessageService.Api\\Controllers\\AttachmentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:40:40.72Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IMessageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IMessageRepository.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Interfaces\\IMessageRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IMessageRepository.cs",
-              "RelativeToolTip": "MessageService.Domain\\Interfaces\\IMessageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Infra\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "UserService.Infra\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Infra\\Services\\AuthService.cs",
+              "RelativeToolTip": "UserService.Infra\\Services\\AuthService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T10:30:57.005Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MessagesController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\MessagesController.cs",
-              "RelativeDocumentMoniker": "MessageService.Api\\Controllers\\MessagesController.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\MessagesController.cs",
-              "RelativeToolTip": "MessageService.Api\\Controllers\\MessagesController.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAA5wIIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:02.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FileController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\FileController.cs",
-              "RelativeDocumentMoniker": "MessageService.Api\\Controllers\\FileController.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\FileController.cs",
-              "RelativeToolTip": "MessageService.Api\\Controllers\\FileController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T14:55:25.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Data\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "MessageService.Data\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Data\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "MessageService.Data\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:18.891Z"
+              "WhenOpened": "2025-06-03T14:11:12.568Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "MessageAttachment.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\MessageAttachment.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\MessageAttachment.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\MessageAttachment.cs",
-              "RelativeToolTip": "MessageService.Domain\\Models\\MessageAttachment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAeAAAAAAAAAA==",
+              "Title": "LocalFileStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Controllers\\LocalFileStorageService.cs",
+              "RelativeDocumentMoniker": "UserService.Api\\Controllers\\LocalFileStorageService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Controllers\\LocalFileStorageService.cs",
+              "RelativeToolTip": "UserService.Api\\Controllers\\LocalFileStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:34:37.674Z"
+              "WhenOpened": "2025-09-05T12:33:04.187Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "FileUploadResponse.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileUploadResponse.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\FileUploadResponse.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileUploadResponse.cs",
-              "RelativeToolTip": "MessageService.Domain\\Models\\FileUploadResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T15:01:20.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FileUpload.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileUpload.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\FileUpload.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileUpload.cs",
-              "RelativeToolTip": "MessageService.Domain\\Models\\FileUpload.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T17:34:40.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FileInfo.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileInfo.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\FileInfo.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileInfo.cs",
-              "RelativeToolTip": "MessageService.Domain\\Models\\FileInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T15:01:42.594Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IFileService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IFileService.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Interfaces\\IFileService.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IFileService.cs",
-              "RelativeToolTip": "MessageService.Domain\\Interfaces\\IFileService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T13:09:11.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FileService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\Services\\FileService.cs",
-              "RelativeDocumentMoniker": "MessageService.Infra\\Services\\FileService.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\Services\\FileService.cs",
-              "RelativeToolTip": "MessageService.Infra\\Services\\FileService.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAD4v2AAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:39:23.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IMessageService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IMessageService.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Interfaces\\IMessageService.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IMessageService.cs",
-              "RelativeToolTip": "MessageService.Domain\\Interfaces\\IMessageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T10:31:01.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MessageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Data\\Repositories\\MessageRepository.cs",
-              "RelativeDocumentMoniker": "MessageService.Data\\Repositories\\MessageRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Data\\Repositories\\MessageRepository.cs",
-              "RelativeToolTip": "MessageService.Data\\Repositories\\MessageRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwAYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:42:51.983Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProjetService.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\ProjetService.Api.csproj",
-              "RelativeDocumentMoniker": "ProjetService.Api\\ProjetService.Api.csproj",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\ProjetService.Api.csproj",
-              "RelativeToolTip": "ProjetService.Api\\ProjetService.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-28T17:59:44.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MessageService.Domain.csproj",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\MessageService.Domain.csproj",
-              "RelativeDocumentMoniker": "MessageService.Domain\\MessageService.Domain.csproj",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\MessageService.Domain.csproj",
-              "RelativeToolTip": "MessageService.Domain\\MessageService.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-25T11:46:33.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "MessageService.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\appsettings.json",
-              "RelativeToolTip": "MessageService.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-28T15:03:06.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Program.cs",
-              "RelativeDocumentMoniker": "MessageService.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Program.cs",
-              "RelativeToolTip": "MessageService.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:48:42.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ApGateway\\Program.cs",
-              "RelativeDocumentMoniker": "ApGateway\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ApGateway\\Program.cs",
-              "RelativeToolTip": "ApGateway\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:42:31.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MessageService.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\MessageService.Api.csproj",
-              "RelativeDocumentMoniker": "MessageService.Api\\MessageService.Api.csproj",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\MessageService.Api.csproj",
-              "RelativeToolTip": "MessageService.Api\\MessageService.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-28T12:46:52.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MessageService.Infra.csproj",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\MessageService.Infra.csproj",
-              "RelativeDocumentMoniker": "MessageService.Infra\\MessageService.Infra.csproj",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\MessageService.Infra.csproj",
-              "RelativeToolTip": "MessageService.Infra\\MessageService.Infra.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-28T13:11:20.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MessageService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\Services\\MessageService.cs",
-              "RelativeDocumentMoniker": "MessageService.Infra\\Services\\MessageService.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\Services\\MessageService.cs",
-              "RelativeToolTip": "MessageService.Infra\\Services\\MessageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T10:31:26.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CreateMessageWithAttachmentsDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\CreateMessageWithAttachmentsDto.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\CreateMessageWithAttachmentsDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\CreateMessageWithAttachmentsDto.cs",
-              "RelativeToolTip": "MessageService.Domain\\DTOs\\CreateMessageWithAttachmentsDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:35:38.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MessageWithAttachmentsDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageWithAttachmentsDto.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\MessageWithAttachmentsDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageWithAttachmentsDto.cs",
-              "RelativeToolTip": "MessageService.Domain\\DTOs\\MessageWithAttachmentsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:36:15.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "MessageAttachmentDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageAttachmentDto.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\MessageAttachmentDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageAttachmentDto.cs",
-              "RelativeToolTip": "MessageService.Domain\\DTOs\\MessageAttachmentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:35:57.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
               "Title": "UtilisateurController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Controllers\\UtilisateurController.cs",
               "RelativeDocumentMoniker": "UserService.Api\\Controllers\\UtilisateurController.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Controllers\\UtilisateurController.cs",
               "RelativeToolTip": "UserService.Api\\Controllers\\UtilisateurController.cs",
-              "ViewState": "AgIAAHkBAAAAAAAAAAAiwKYBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHwBAAAAAAAAAAAUwOgBAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T13:47:30.087Z"
+              "WhenOpened": "2025-09-05T12:29:43.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CreateMessageDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\CreateMessageDto.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\CreateMessageDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\CreateMessageDto.cs",
-              "RelativeToolTip": "MessageService.Domain\\DTOs\\CreateMessageDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:36.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "GetMessagesByUserHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Queries\\GetMessagesByUserHandler.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Queries\\GetMessagesByUserHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Queries\\GetMessagesByUserHandler.cs",
-              "RelativeToolTip": "MessageService.Domain\\Queries\\GetMessagesByUserHandler.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAiwEgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:56.892Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "GetMessagesByUserQuery.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Queries\\GetMessagesByUserQuery.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Queries\\GetMessagesByUserQuery.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Queries\\GetMessagesByUserQuery.cs",
-              "RelativeToolTip": "MessageService.Domain\\Queries\\GetMessagesByUserQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:44:06.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "MessageDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageDto.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\MessageDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageDto.cs",
-              "RelativeToolTip": "MessageService.Domain\\DTOs\\MessageDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:40.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MessageWithUserDetailsDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageWithUserDetailsDto.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\MessageWithUserDetailsDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageWithUserDetailsDto.cs",
-              "RelativeToolTip": "MessageService.Domain\\DTOs\\MessageWithUserDetailsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:45.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "UtilisateurDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\UtilisateurDto.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\UtilisateurDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\UtilisateurDto.cs",
-              "RelativeToolTip": "MessageService.Domain\\DTOs\\UtilisateurDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:50.454Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CreateMessageHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Commands\\CreateMessageHandler.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Commands\\CreateMessageHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Commands\\CreateMessageHandler.cs",
-              "RelativeToolTip": "MessageService.Domain\\Commands\\CreateMessageHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:30.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "CreateMessageCommand.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Commands\\CreateMessageCommand.cs",
-              "RelativeDocumentMoniker": "MessageService.Domain\\Commands\\CreateMessageCommand.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Commands\\CreateMessageCommand.cs",
-              "RelativeToolTip": "MessageService.Domain\\Commands\\CreateMessageCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:43:25.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 86,
-              "Title": "CreateTacheCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\CreateTacheCommandHandler.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Handlers\\CreateTacheCommandHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\CreateTacheCommandHandler.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Handlers\\CreateTacheCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T09:12:09.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 87,
-              "Title": "CreateTacheCommand.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\CreateTacheCommand.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Commands\\CreateTacheCommand.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\CreateTacheCommand.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Commands\\CreateTacheCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T09:10:26.919Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "CommandProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Infra\\Services\\CommandProcessor.cs",
-              "RelativeDocumentMoniker": "ProjetService.Infra\\Services\\CommandProcessor.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Infra\\Services\\CommandProcessor.cs",
-              "RelativeToolTip": "ProjetService.Infra\\Services\\CommandProcessor.cs",
-              "ViewState": "AgIAAF8BAAAAAAAAAAAswLoCAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:09:02.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Utilisateur.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Models\\Utilisateur.cs",
-              "RelativeDocumentMoniker": "UserService.Domain\\Models\\Utilisateur.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Models\\Utilisateur.cs",
-              "RelativeToolTip": "UserService.Domain\\Models\\Utilisateur.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:11:33.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "AddGenericCommand.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\AddGenericCommand.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Commands\\AddGenericCommand.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\AddGenericCommand.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Commands\\AddGenericCommand.cs",
+              "DocumentIndex": 8,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\DTOs\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\DTOs\\CreateUserDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\DTOs\\CreateUserDto.cs",
+              "RelativeToolTip": "UserService.Domain\\DTOs\\CreateUserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:24:42.179Z"
+              "WhenOpened": "2025-09-05T12:13:36.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Tache.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Tache.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Tache.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Tache.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Models\\Tache.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T09:25:18.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 88,
-              "Title": "CreateProjetCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\CreateProjetCommandHandler.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Handlers\\CreateProjetCommandHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\CreateProjetCommandHandler.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Handlers\\CreateProjetCommandHandler.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAwE0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:25:44.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "CreateProjetCommand.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\CreateProjetCommand.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Commands\\CreateProjetCommand.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\CreateProjetCommand.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Commands\\CreateProjetCommand.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwDsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:29:04.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Program.cs",
               "RelativeDocumentMoniker": "ProjetService.Api\\Program.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Program.cs",
               "RelativeToolTip": "ProjetService.Api\\Program.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAAAJ8AAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAAAJ8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T14:55:17.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Projet.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Projet.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Projet.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Projet.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Models\\Projet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Program.cs",
+              "RelativeDocumentMoniker": "UserService.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Program.cs",
+              "RelativeToolTip": "UserService.Api\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T09:25:06.778Z"
+              "WhenOpened": "2025-06-03T14:13:12.496Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Equipe.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Equipe.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Equipe.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Equipe.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Models\\Equipe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Program.cs",
+              "RelativeDocumentMoniker": "MessageService.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Program.cs",
+              "RelativeToolTip": "MessageService.Api\\Program.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAlwEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:50:15.475Z"
+              "WhenOpened": "2025-06-25T11:48:42.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Interface\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\IGenericRepository.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Interface\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "EmailVerification.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Models\\EmailVerification.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Models\\EmailVerification.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Models\\EmailVerification.cs",
+              "RelativeToolTip": "UserService.Domain\\Models\\EmailVerification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:15:13.152Z"
+              "WhenOpened": "2025-07-16T08:18:40.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "AddGenericHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\AddGenericHandler.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Handlers\\AddGenericHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\AddGenericHandler.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Handlers\\AddGenericHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Models\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Models\\Utilisateur.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Models\\Utilisateur.cs",
+              "RelativeToolTip": "UserService.Domain\\Models\\Utilisateur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:11:48.576Z"
+              "WhenOpened": "2025-06-03T14:11:33.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ProjetEquipe.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\ProjetEquipe.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\ProjetEquipe.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\ProjetEquipe.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Models\\ProjetEquipe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T10:54:58.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "AssistantController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\AssistantController.cs",
-              "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\AssistantController.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\AssistantController.cs",
-              "RelativeToolTip": "ProjetService.Api\\Controllers\\AssistantController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBQAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T08:08:53.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "CommandRequest.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\CommandRequest.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\CommandRequest.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\CommandRequest.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Models\\CommandRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T12:58:24.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 5,
               "Title": "CreateUtilisateurCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\CreateUtilisateurCommandHandler.cs",
               "RelativeDocumentMoniker": "UserService.Domain\\Handlers\\CreateUtilisateurCommandHandler.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\CreateUtilisateurCommandHandler.cs",
               "RelativeToolTip": "UserService.Domain\\Handlers\\CreateUtilisateurCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T14:02:01.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "UploadProfilePhotoHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\UploadProfilePhotoHandler.cs",
-              "RelativeDocumentMoniker": "UserService.Domain\\Handlers\\UploadProfilePhotoHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\UploadProfilePhotoHandler.cs",
-              "RelativeToolTip": "UserService.Domain\\Handlers\\UploadProfilePhotoHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T14:01:51.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "GetUtilisateurByEmailQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\GetUtilisateurByEmailQueryHandler.cs",
-              "RelativeDocumentMoniker": "UserService.Domain\\Handlers\\GetUtilisateurByEmailQueryHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\GetUtilisateurByEmailQueryHandler.cs",
-              "RelativeToolTip": "UserService.Domain\\Handlers\\GetUtilisateurByEmailQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T14:01:55.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 4,
               "Title": "GetUtilisateurQuery.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetUtilisateurQuery.cs",
               "RelativeDocumentMoniker": "UserService.Domain\\Queries\\GetUtilisateurQuery.cs",
@@ -1032,43 +583,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "GetUtilisateurByEmailQuery.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetUtilisateurByEmailQuery.cs",
-              "RelativeDocumentMoniker": "UserService.Domain\\Queries\\GetUtilisateurByEmailQuery.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetUtilisateurByEmailQuery.cs",
-              "RelativeToolTip": "UserService.Domain\\Queries\\GetUtilisateurByEmailQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Infra\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "UserService.Infra\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Infra\\Services\\EmailService.cs",
+              "RelativeToolTip": "UserService.Infra\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T13:53:40.104Z"
+              "WhenOpened": "2025-07-16T08:36:45.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "GetAllUtilisateursQuery.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetAllUtilisateursQuery.cs",
-              "RelativeDocumentMoniker": "UserService.Domain\\Queries\\GetAllUtilisateursQuery.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetAllUtilisateursQuery.cs",
-              "RelativeToolTip": "UserService.Domain\\Queries\\GetAllUtilisateursQuery.cs",
+              "DocumentIndex": 17,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\Infrastructure\\IEmailService.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Interfaces\\Infrastructure\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\Infrastructure\\IEmailService.cs",
+              "RelativeToolTip": "UserService.Domain\\Interfaces\\Infrastructure\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T08:35:41.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "UserService.Domain\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T08:03:11.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CommandProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Infra\\Services\\CommandProcessor.cs",
+              "RelativeDocumentMoniker": "ProjetService.Infra\\Services\\CommandProcessor.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Infra\\Services\\CommandProcessor.cs",
+              "RelativeToolTip": "ProjetService.Infra\\Services\\CommandProcessor.cs",
+              "ViewState": "AgIAADcDAAAAAAAAAAAmwEwDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:09:02.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "UserService.Domain\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:11:37.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormFileSchemaFilter.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Filters\\FormFileSchemaFilter.cs",
+              "RelativeDocumentMoniker": "UserService.Api\\Filters\\FormFileSchemaFilter.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Filters\\FormFileSchemaFilter.cs",
+              "RelativeToolTip": "UserService.Api\\Filters\\FormFileSchemaFilter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T13:53:37.197Z"
+              "WhenOpened": "2025-07-16T08:36:18.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "GetUtilisateurQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\GetUtilisateurQueryHandler.cs",
-              "RelativeDocumentMoniker": "UserService.Domain\\Handlers\\GetUtilisateurQueryHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\GetUtilisateurQueryHandler.cs",
-              "RelativeToolTip": "UserService.Domain\\Handlers\\GetUtilisateurQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:26:18.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 15,
               "Title": "IFileStorageService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\Infrastructure\\IFileStorageService.cs",
               "RelativeDocumentMoniker": "UserService.Domain\\Interfaces\\Infrastructure\\IFileStorageService.cs",
@@ -1080,7 +667,871 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Data\\Context\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "UserService.Data\\Context\\UserDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Data\\Context\\UserDbContext.cs",
+              "RelativeToolTip": "UserService.Data\\Context\\UserDbContext.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAmwDcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:26:45.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "UserService.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\appsettings.json",
+              "RelativeToolTip": "UserService.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T14:27:08.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IEmailVerificationService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\Infrastructure\\IEmailVerificationService.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Interfaces\\Infrastructure\\IEmailVerificationService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\Infrastructure\\IEmailVerificationService.cs",
+              "RelativeToolTip": "UserService.Domain\\Interfaces\\Infrastructure\\IEmailVerificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T08:19:33.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UtilisateurRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Data\\Repositories\\UtilisateurRepository.cs",
+              "RelativeDocumentMoniker": "UserService.Data\\Repositories\\UtilisateurRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Data\\Repositories\\UtilisateurRepository.cs",
+              "RelativeToolTip": "UserService.Data\\Repositories\\UtilisateurRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:12:04.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Tache.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Tache.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Tache.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Tache.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Models\\Tache.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T09:25:18.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Planification.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Planification.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Planification.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Planification.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Models\\Planification.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA7wD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:29:16.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FicheHeuresController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\FicheHeuresController.cs",
+              "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\FicheHeuresController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\FicheHeuresController.cs",
+              "RelativeToolTip": "ProjetService.Api\\Controllers\\FicheHeuresController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswMAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T19:28:28.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PlanificationController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\PlanificationController.cs",
+              "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\PlanificationController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\PlanificationController.cs",
+              "RelativeToolTip": "ProjetService.Api\\Controllers\\PlanificationController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAQwH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T17:37:48.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SaisieTempsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\SaisieTempsController.cs",
+              "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\SaisieTempsController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\SaisieTempsController.cs",
+              "RelativeToolTip": "ProjetService.Api\\Controllers\\SaisieTempsController.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAAwN0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T10:28:46.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SaisieTempsHandlers.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\SaisieTempsHandlers.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Handlers\\SaisieTempsHandlers.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\SaisieTempsHandlers.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Handlers\\SaisieTempsHandlers.cs",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAuwBoBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T10:28:11.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GetFicheHeureQuery.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Queries\\GetFicheHeureQuery.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Queries\\GetFicheHeureQuery.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Queries\\GetFicheHeureQuery.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Queries\\GetFicheHeureQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T19:27:59.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IPlanificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\IPlanificationRepository.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Interface\\IPlanificationRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\IPlanificationRepository.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Interface\\IPlanificationRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:29:14.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SaisieTempsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Repositories\\SaisieTempsRepository.cs",
+              "RelativeDocumentMoniker": "ProjetService.Data\\Repositories\\SaisieTempsRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Repositories\\SaisieTempsRepository.cs",
+              "RelativeToolTip": "ProjetService.Data\\Repositories\\SaisieTempsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T10:28:36.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProjetDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Context\\ProjetDbContext.cs",
+              "RelativeDocumentMoniker": "ProjetService.Data\\Context\\ProjetDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Context\\ProjetDbContext.cs",
+              "RelativeToolTip": "ProjetService.Data\\Context\\ProjetDbContext.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAQwK8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:28:41.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SaisieTempsQueries.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Queries\\SaisieTempsQueries.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Queries\\SaisieTempsQueries.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Queries\\SaisieTempsQueries.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Queries\\SaisieTempsQueries.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvx4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T10:27:58.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SaisieTempsDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\SaisieTempsDto.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\DTO\\SaisieTempsDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\SaisieTempsDto.cs",
+              "RelativeToolTip": "ProjetService.Domain\\DTO\\SaisieTempsDto.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAIwGUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T10:28:17.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SaisieTemps.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\SaisieTemps.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\SaisieTemps.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\SaisieTemps.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Models\\SaisieTemps.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T19:25:20.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ISaisieTempsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\ISaisieTempsRepository.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Interface\\ISaisieTempsRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\ISaisieTempsRepository.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Interface\\ISaisieTempsRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T10:27:45.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CreatePlanificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\CreatePlanificationDto.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\DTO\\CreatePlanificationDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\CreatePlanificationDto.cs",
+              "RelativeToolTip": "ProjetService.Domain\\DTO\\CreatePlanificationDto.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:29:08.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SaisieTempsCommands.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\SaisieTempsCommands.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Commands\\SaisieTempsCommands.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\SaisieTempsCommands.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Commands\\SaisieTempsCommands.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwCEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T10:28:28.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CreateProjetCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\CreateProjetCommand.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Commands\\CreateProjetCommand.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\CreateProjetCommand.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Commands\\CreateProjetCommand.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAIwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:29:04.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PlanificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Repositories\\PlanificationRepository.cs",
+              "RelativeDocumentMoniker": "ProjetService.Data\\Repositories\\PlanificationRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Repositories\\PlanificationRepository.cs",
+              "RelativeToolTip": "ProjetService.Data\\Repositories\\PlanificationRepository.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAUwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:54:07.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PlanificationDtos.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\PlanificationDtos.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\DTO\\PlanificationDtos.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\PlanificationDtos.cs",
+              "RelativeToolTip": "ProjetService.Domain\\DTO\\PlanificationDtos.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:54:01.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IMessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IMessageRepository.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Interfaces\\IMessageRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IMessageRepository.cs",
+              "RelativeToolTip": "MessageService.Domain\\Interfaces\\IMessageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T10:30:57.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ProjetEquipe.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\ProjetEquipe.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\ProjetEquipe.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\ProjetEquipe.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Models\\ProjetEquipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:54:58.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Equipe.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Equipe.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Equipe.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Equipe.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Models\\Equipe.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T10:50:15.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MembreEquipe.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\MembreEquipe.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\MembreEquipe.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\MembreEquipe.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Models\\MembreEquipe.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:54:18.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AttachmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\AttachmentsController.cs",
+              "RelativeDocumentMoniker": "MessageService.Api\\Controllers\\AttachmentsController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\AttachmentsController.cs",
+              "RelativeToolTip": "MessageService.Api\\Controllers\\AttachmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:40:40.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\Message.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\Message.cs",
+              "RelativeToolTip": "MessageService.Domain\\Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:57:20.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "MessagesController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\MessagesController.cs",
+              "RelativeDocumentMoniker": "MessageService.Api\\Controllers\\MessagesController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\MessagesController.cs",
+              "RelativeToolTip": "MessageService.Api\\Controllers\\MessagesController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:02.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "MessageService.Api\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\Controllers\\FileController.cs",
+              "RelativeToolTip": "MessageService.Api\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T14:55:25.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Data\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MessageService.Data\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Data\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "MessageService.Data\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:18.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "MessageAttachment.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\MessageAttachment.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\MessageAttachment.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\MessageAttachment.cs",
+              "RelativeToolTip": "MessageService.Domain\\Models\\MessageAttachment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:34:37.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "FileUploadResponse.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileUploadResponse.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\FileUploadResponse.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileUploadResponse.cs",
+              "RelativeToolTip": "MessageService.Domain\\Models\\FileUploadResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:01:20.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "FileUpload.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileUpload.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\FileUpload.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileUpload.cs",
+              "RelativeToolTip": "MessageService.Domain\\Models\\FileUpload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T17:34:40.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "FileInfo.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileInfo.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Models\\FileInfo.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Models\\FileInfo.cs",
+              "RelativeToolTip": "MessageService.Domain\\Models\\FileInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T15:01:42.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IFileService.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Interfaces\\IFileService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IFileService.cs",
+              "RelativeToolTip": "MessageService.Domain\\Interfaces\\IFileService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T13:09:11.826Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 57,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "MessageService.Infra\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\Services\\FileService.cs",
+              "RelativeToolTip": "MessageService.Infra\\Services\\FileService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAD4v2AAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:39:23.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IMessageService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IMessageService.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Interfaces\\IMessageService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Interfaces\\IMessageService.cs",
+              "RelativeToolTip": "MessageService.Domain\\Interfaces\\IMessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T10:31:01.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "MessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Data\\Repositories\\MessageRepository.cs",
+              "RelativeDocumentMoniker": "MessageService.Data\\Repositories\\MessageRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Data\\Repositories\\MessageRepository.cs",
+              "RelativeToolTip": "MessageService.Data\\Repositories\\MessageRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:42:51.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ProjetService.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\ProjetService.Api.csproj",
+              "RelativeDocumentMoniker": "ProjetService.Api\\ProjetService.Api.csproj",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\ProjetService.Api.csproj",
+              "RelativeToolTip": "ProjetService.Api\\ProjetService.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-28T17:59:44.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "MessageService.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\MessageService.Domain.csproj",
+              "RelativeDocumentMoniker": "MessageService.Domain\\MessageService.Domain.csproj",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\MessageService.Domain.csproj",
+              "RelativeToolTip": "MessageService.Domain\\MessageService.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-25T11:46:33.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "MessageService.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\appsettings.json",
+              "RelativeToolTip": "MessageService.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-28T15:03:06.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ApGateway\\Program.cs",
+              "RelativeDocumentMoniker": "ApGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ApGateway\\Program.cs",
+              "RelativeToolTip": "ApGateway\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:42:31.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "MessageService.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\MessageService.Api.csproj",
+              "RelativeDocumentMoniker": "MessageService.Api\\MessageService.Api.csproj",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Api\\MessageService.Api.csproj",
+              "RelativeToolTip": "MessageService.Api\\MessageService.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-28T12:46:52.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "MessageService.Infra.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\MessageService.Infra.csproj",
+              "RelativeDocumentMoniker": "MessageService.Infra\\MessageService.Infra.csproj",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\MessageService.Infra.csproj",
+              "RelativeToolTip": "MessageService.Infra\\MessageService.Infra.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-28T13:11:20.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\Services\\MessageService.cs",
+              "RelativeDocumentMoniker": "MessageService.Infra\\Services\\MessageService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Infra\\Services\\MessageService.cs",
+              "RelativeToolTip": "MessageService.Infra\\Services\\MessageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T10:31:26.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "CreateMessageWithAttachmentsDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\CreateMessageWithAttachmentsDto.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\CreateMessageWithAttachmentsDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\CreateMessageWithAttachmentsDto.cs",
+              "RelativeToolTip": "MessageService.Domain\\DTOs\\CreateMessageWithAttachmentsDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:35:38.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "MessageWithAttachmentsDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageWithAttachmentsDto.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\MessageWithAttachmentsDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageWithAttachmentsDto.cs",
+              "RelativeToolTip": "MessageService.Domain\\DTOs\\MessageWithAttachmentsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:36:15.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "MessageAttachmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageAttachmentDto.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\MessageAttachmentDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageAttachmentDto.cs",
+              "RelativeToolTip": "MessageService.Domain\\DTOs\\MessageAttachmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:35:57.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "CreateMessageDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\CreateMessageDto.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\CreateMessageDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\CreateMessageDto.cs",
+              "RelativeToolTip": "MessageService.Domain\\DTOs\\CreateMessageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:36.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "GetMessagesByUserHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Queries\\GetMessagesByUserHandler.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Queries\\GetMessagesByUserHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Queries\\GetMessagesByUserHandler.cs",
+              "RelativeToolTip": "MessageService.Domain\\Queries\\GetMessagesByUserHandler.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:56.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "GetMessagesByUserQuery.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Queries\\GetMessagesByUserQuery.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Queries\\GetMessagesByUserQuery.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Queries\\GetMessagesByUserQuery.cs",
+              "RelativeToolTip": "MessageService.Domain\\Queries\\GetMessagesByUserQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:44:06.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "MessageDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageDto.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\MessageDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageDto.cs",
+              "RelativeToolTip": "MessageService.Domain\\DTOs\\MessageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:40.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "MessageWithUserDetailsDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageWithUserDetailsDto.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\MessageWithUserDetailsDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\MessageWithUserDetailsDto.cs",
+              "RelativeToolTip": "MessageService.Domain\\DTOs\\MessageWithUserDetailsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:45.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "UtilisateurDto.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\UtilisateurDto.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\DTOs\\UtilisateurDto.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\DTOs\\UtilisateurDto.cs",
+              "RelativeToolTip": "MessageService.Domain\\DTOs\\UtilisateurDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:50.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "CreateMessageHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Commands\\CreateMessageHandler.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Commands\\CreateMessageHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Commands\\CreateMessageHandler.cs",
+              "RelativeToolTip": "MessageService.Domain\\Commands\\CreateMessageHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:30.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "CreateMessageCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Commands\\CreateMessageCommand.cs",
+              "RelativeDocumentMoniker": "MessageService.Domain\\Commands\\CreateMessageCommand.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\MessageService.Domain\\Commands\\CreateMessageCommand.cs",
+              "RelativeToolTip": "MessageService.Domain\\Commands\\CreateMessageCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:43:25.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "CreateTacheCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\CreateTacheCommandHandler.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Handlers\\CreateTacheCommandHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\CreateTacheCommandHandler.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Handlers\\CreateTacheCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T09:12:09.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "CreateTacheCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\CreateTacheCommand.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Commands\\CreateTacheCommand.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\CreateTacheCommand.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Commands\\CreateTacheCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T09:10:26.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "AddGenericCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\AddGenericCommand.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Commands\\AddGenericCommand.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Commands\\AddGenericCommand.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Commands\\AddGenericCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:24:42.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "CreateProjetCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\CreateProjetCommandHandler.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Handlers\\CreateProjetCommandHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\CreateProjetCommandHandler.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Handlers\\CreateProjetCommandHandler.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:25:44.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Projet.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Projet.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Projet.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Projet.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Models\\Projet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T09:25:06.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Interface\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\IGenericRepository.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Interface\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:15:13.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "AddGenericHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\AddGenericHandler.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Handlers\\AddGenericHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Handlers\\AddGenericHandler.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Handlers\\AddGenericHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:11:48.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "AssistantController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\AssistantController.cs",
+              "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\AssistantController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\AssistantController.cs",
+              "RelativeToolTip": "ProjetService.Api\\Controllers\\AssistantController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T08:08:53.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "CommandRequest.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\CommandRequest.cs",
+              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\CommandRequest.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\CommandRequest.cs",
+              "RelativeToolTip": "ProjetService.Domain\\Models\\CommandRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T12:58:24.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "UploadProfilePhotoHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\UploadProfilePhotoHandler.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Handlers\\UploadProfilePhotoHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\UploadProfilePhotoHandler.cs",
+              "RelativeToolTip": "UserService.Domain\\Handlers\\UploadProfilePhotoHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:01:51.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "GetUtilisateurByEmailQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\GetUtilisateurByEmailQueryHandler.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Handlers\\GetUtilisateurByEmailQueryHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\GetUtilisateurByEmailQueryHandler.cs",
+              "RelativeToolTip": "UserService.Domain\\Handlers\\GetUtilisateurByEmailQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T14:01:55.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "GetUtilisateurByEmailQuery.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetUtilisateurByEmailQuery.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Queries\\GetUtilisateurByEmailQuery.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetUtilisateurByEmailQuery.cs",
+              "RelativeToolTip": "UserService.Domain\\Queries\\GetUtilisateurByEmailQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T13:53:40.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "GetAllUtilisateursQuery.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetAllUtilisateursQuery.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Queries\\GetAllUtilisateursQuery.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Queries\\GetAllUtilisateursQuery.cs",
+              "RelativeToolTip": "UserService.Domain\\Queries\\GetAllUtilisateursQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T13:53:37.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "GetUtilisateurQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\GetUtilisateurQueryHandler.cs",
+              "RelativeDocumentMoniker": "UserService.Domain\\Handlers\\GetUtilisateurQueryHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Handlers\\GetUtilisateurQueryHandler.cs",
+              "RelativeToolTip": "UserService.Domain\\Handlers\\GetUtilisateurQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T14:26:18.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
               "Title": "UploadProfilePhotoCommand.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Commands\\UploadProfilePhotoCommand.cs",
               "RelativeDocumentMoniker": "UserService.Domain\\Commands\\UploadProfilePhotoCommand.cs",
@@ -1092,43 +1543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "UtilisateurRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Data\\Repositories\\UtilisateurRepository.cs",
-              "RelativeDocumentMoniker": "UserService.Data\\Repositories\\UtilisateurRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Data\\Repositories\\UtilisateurRepository.cs",
-              "RelativeToolTip": "UserService.Data\\Repositories\\UtilisateurRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:12:04.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "UserDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Data\\Context\\UserDbContext.cs",
-              "RelativeDocumentMoniker": "UserService.Data\\Context\\UserDbContext.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Data\\Context\\UserDbContext.cs",
-              "RelativeToolTip": "UserService.Data\\Context\\UserDbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwCwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:26:45.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Infra\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "UserService.Infra\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Infra\\Services\\AuthService.cs",
-              "RelativeToolTip": "UserService.Infra\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:11:12.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 89,
               "Title": "IUtilisateurRepository.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\IUtilisateurRepository.cs",
               "RelativeDocumentMoniker": "UserService.Domain\\Interfaces\\IUtilisateurRepository.cs",
@@ -1140,7 +1555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 88,
               "Title": "CreateUtilisateurCommand.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Commands\\CreateUtilisateurCommand.cs",
               "RelativeDocumentMoniker": "UserService.Domain\\Commands\\CreateUtilisateurCommand.cs",
@@ -1152,19 +1567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "MembreEquipe.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\MembreEquipe.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\MembreEquipe.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\MembreEquipe.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Models\\MembreEquipe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:54:18.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 90,
               "Title": "EquipeUtilisateur.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\EquipeUtilisateur.cs",
               "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\EquipeUtilisateur.cs",
@@ -1176,19 +1579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "Planification.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Planification.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Planification.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Planification.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Models\\Planification.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAswD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:29:16.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 91,
               "Title": "Commentaire.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Models\\Commentaire.cs",
               "RelativeDocumentMoniker": "ProjetService.Domain\\Models\\Commentaire.cs",
@@ -1200,7 +1591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 92,
               "Title": "TacheController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\TacheController.cs",
               "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\TacheController.cs",
@@ -1212,7 +1603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 98,
               "Title": "TacheGanttDto.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\TacheGanttDto.cs",
               "RelativeDocumentMoniker": "ProjetService.Domain\\DTO\\TacheGanttDto.cs",
@@ -1224,7 +1615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 96,
               "Title": "StatistiquesController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\StatistiquesController.cs",
               "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\StatistiquesController.cs",
@@ -1236,7 +1627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 95,
               "Title": "TacheCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\TacheCreateDto.cs",
               "RelativeDocumentMoniker": "ProjetService.Domain\\DTO\\TacheCreateDto.cs",
@@ -1248,7 +1639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 93,
               "Title": "EquipeController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\EquipeController.cs",
               "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\EquipeController.cs",
@@ -1260,7 +1651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 94,
               "Title": "GenericController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\GenericController.cs",
               "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\GenericController.cs",
@@ -1272,19 +1663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "ProjetDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Context\\ProjetDbContext.cs",
-              "RelativeDocumentMoniker": "ProjetService.Data\\Context\\ProjetDbContext.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Context\\ProjetDbContext.cs",
-              "RelativeToolTip": "ProjetService.Data\\Context\\ProjetDbContext.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAHwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:28:41.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 97,
               "Title": "TacheETAData.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Infra\\Services\\TacheETAData.cs",
               "RelativeDocumentMoniker": "ProjetService.Infra\\Services\\TacheETAData.cs",
@@ -1296,7 +1675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 99,
               "Title": "20250609142803_InitialCreateWithEquippe.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Migrations\\20250609142803_InitialCreateWithEquippe.cs",
               "RelativeDocumentMoniker": "ProjetService.Data\\Migrations\\20250609142803_InitialCreateWithEquippe.cs",
@@ -1308,7 +1687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 100,
               "Title": "ProjetController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\ProjetController.cs",
               "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\ProjetController.cs",
@@ -1320,19 +1699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "PlanificationController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\PlanificationController.cs",
-              "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\PlanificationController.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\PlanificationController.cs",
-              "RelativeToolTip": "ProjetService.Api\\Controllers\\PlanificationController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAA8wG0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T17:37:48.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 101,
               "Title": "ETAController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\Controllers\\ETAController.cs",
               "RelativeDocumentMoniker": "ProjetService.Api\\Controllers\\ETAController.cs",
@@ -1344,55 +1711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "PlanificationDtos.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\PlanificationDtos.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\DTO\\PlanificationDtos.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\PlanificationDtos.cs",
-              "RelativeToolTip": "ProjetService.Domain\\DTO\\PlanificationDtos.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:54:01.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "PlanificationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Repositories\\PlanificationRepository.cs",
-              "RelativeDocumentMoniker": "ProjetService.Data\\Repositories\\PlanificationRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Data\\Repositories\\PlanificationRepository.cs",
-              "RelativeToolTip": "ProjetService.Data\\Repositories\\PlanificationRepository.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAYwGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:54:07.644Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "CreatePlanificationDto.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\CreatePlanificationDto.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\DTO\\CreatePlanificationDto.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\DTO\\CreatePlanificationDto.cs",
-              "RelativeToolTip": "ProjetService.Domain\\DTO\\CreatePlanificationDto.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvycAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:29:08.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
-              "Title": "IPlanificationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\IPlanificationRepository.cs",
-              "RelativeDocumentMoniker": "ProjetService.Domain\\Interface\\IPlanificationRepository.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Domain\\Interface\\IPlanificationRepository.cs",
-              "RelativeToolTip": "ProjetService.Domain\\Interface\\IPlanificationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:29:14.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 102,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ProjetService.Api\\appsettings.json",
               "RelativeDocumentMoniker": "ProjetService.Api\\appsettings.json",
@@ -1404,19 +1723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "UserService.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\appsettings.json",
-              "RelativeToolTip": "UserService.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-03T14:27:08.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 103,
               "Title": "ocelot.json",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\ApGateway\\ocelot.json",
               "RelativeDocumentMoniker": "ApGateway\\ocelot.json",
@@ -1427,28 +1734,8 @@
               "WhenOpened": "2025-06-03T15:09:36.286Z"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Program.cs",
-              "RelativeDocumentMoniker": "UserService.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Api\\Program.cs",
-              "RelativeToolTip": "UserService.Api\\Program.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAADsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:13:12.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 85,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "UserService.Domain\\Interfaces\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\pfe back final\\PFW\\PFW\\UserService.Domain\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "UserService.Domain\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T14:11:37.116Z"
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

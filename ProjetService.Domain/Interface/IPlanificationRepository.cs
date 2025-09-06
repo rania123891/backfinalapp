@@ -19,6 +19,10 @@ namespace ProjetService.Domain.Interface
         Task<IEnumerable<Planification>> GetByUserIdAsync(int userId);
         Task<IEnumerable<Planification>> GetByUserIdAndDateAsync(int userId, DateTime date);
         Task<IEnumerable<Planification>> GetAllByUserIdWithIncludesAsync(int userId);
-       
+      
+        Task<IEnumerable<Planification>> GetByProjetIdWithIncludesAsync(int projetId, DateTime? dateDebut = null, DateTime? dateFin = null);
+
+     
+  
     }
 }

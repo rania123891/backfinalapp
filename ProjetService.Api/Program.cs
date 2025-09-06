@@ -20,28 +20,29 @@ using ProjetService.Domain.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ? Vérifier si la clé JWT est bien définie
+// ? Vï¿½rifier si la clï¿½ JWT est bien dï¿½finie
 var jwtSecret = builder.Configuration["Jwt:Secret"];
 if (string.IsNullOrWhiteSpace(jwtSecret))
 {
-    throw new ArgumentNullException("Jwt:Secret", "? La clé JWT est introuvable dans appsettings.json !");
+    throw new ArgumentNullException("Jwt:Secret", "? La clï¿½ JWT est introuvable dans appsettings.json !");
 }
 
-// ? Vérifier la connexion à la base de données
+// ? Vï¿½rifier la connexion ï¿½ la base de donnï¿½es
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 if (string.IsNullOrWhiteSpace(connectionString))
 {
-    throw new InvalidOperationException("? ERREUR: La connexion à la base de données est introuvable !");
+    throw new InvalidOperationException("? ERREUR: La connexion ï¿½ la base de donnï¿½es est introuvable !");
 }
-Console.WriteLine("? Connexion à la base de données bien configurée.");
+Console.WriteLine("? Connexion ï¿½ la base de donnï¿½es bien configurï¿½e.");
 
 // ? Enregistrer le DbContext
 builder.Services.AddDbContext<ProjetDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// ? Enregistrer les dépendances (Repositories, Services, etc.)
+// ? Enregistrer les dï¿½pendances (Repositories, Services, etc.)
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ICommandProcessor, CommandProcessor>();
+builder.Services.AddScoped<ISaisieTempsRepository, SaisieTempsRepository>();
 
 
 // ? Configurer MediatR
@@ -74,7 +75,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// ? Ajouter CORS (si besoin d'accès cross-origin)
+// ? Ajouter CORS (si besoin d'accï¿½s cross-origin)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
@@ -121,20 +122,20 @@ builder.Services.AddSwaggerGen(c =>
 
 });
 
-// ? Ajouter les contrôleurs
-// Dans Program.cs, après builder.Services.AddControllers()
+// ? Ajouter les contrï¿½leurs
+// Dans Program.cs, aprï¿½s builder.Services.AddControllers()
 // Ajouter cette ligne dans votre Program.cs
 builder.Services.AddScoped<IETAPredictionService, ETAPredictionService>();
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
-        // Gérer les cycles de référence
+        // Gï¿½rer les cycles de rï¿½fï¿½rence
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
 
-        // Optionnel : améliorer la lisibilité
+        // Optionnel : amï¿½liorer la lisibilitï¿½
         options.JsonSerializerOptions.WriteIndented = true;
 
-        // Ignorer les propriétés null
+        // Ignorer les propriï¿½tï¿½s null
         options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
     });
 // Ajouter dans votre Program.cs existant :
@@ -148,16 +149,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-// Debugging JWT - À SUPPRIMER APRÈS
-// Debugging JWT - À SUPPRIMER APRÈS
+// Debugging JWT - ï¿½ SUPPRIMER APRï¿½S
+// Debugging JWT - ï¿½ SUPPRIMER APRï¿½S
 app.Use(async (context, next) =>
 {
-    Console.WriteLine($"DEBUG - Requête reçue: {context.Request.Method} {context.Request.Path}");
+    Console.WriteLine($"DEBUG - Requï¿½te reï¿½ue: {context.Request.Method} {context.Request.Path}");
     Console.WriteLine($"DEBUG - Authorization header: {context.Request.Headers["Authorization"].FirstOrDefault()}");
 
     await next();
 
-    Console.WriteLine($"DEBUG - Réponse: {context.Response.StatusCode}");
+    Console.WriteLine($"DEBUG - Rï¿½ponse: {context.Response.StatusCode}");
 });
 app.UseRouting();
 app.UseCors("AllowAllOrigins");
